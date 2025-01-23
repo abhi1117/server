@@ -1,0 +1,195 @@
+.form-preview-containerformpreview {
+  padding: 20px;
+  margin: 20px;
+} 
+
+.form-preview-headerformpreview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-preview-buttonsformpreview {
+  display: flex;
+  align-items: center;
+}
+
+.form-preview-buttonsformpreview button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-preview-save-buttonformpreview {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.form-preview-save-buttonformpreview:hover {
+  background-color: #0056b3;
+}
+
+.form-preview-edit-buttonformpreview {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.form-preview-edit-buttonformpreview:hover {
+  background-color: #e6f7ff;
+}
+
+.form-preview-close-buttonformpreview {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.form-preview-close-buttonformpreview:hover {
+  background-color: #e6f7ff;
+} 
+
+.form-groupformpreview {
+  /* margin-bottom: 15px; */
+  margin-bottom: 3px;
+  position: relative; /* Added for positioning the character count */
+}
+
+.form-groupformpreview label {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  margin-bottom: 3px;
+}
+
+.form-groupformpreview input,
+.form-groupformpreview select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.requiredformpreview {
+  color: red;
+  margin-left: 5px;
+}
+
+.form-preview-label-numberformpreview {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-preview-submit-buttonformpreview {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.form-preview-submit-buttonformpreview:hover {
+  background-color: #0056b3;
+}
+
+.form-preview-boxformpreview {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.3); */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-groupformpreview small {
+  position: absolute; /* Absolute positioning for character count */
+  right: 10px; /* Align to the right */
+  bottom: -20px; /* Adjust position to avoid overlap */
+  color: #666;
+}
+
+.character-limit-formpreview {
+  text-align: right;
+  font-size: 12px;
+  color: #555; 
+  margin-top: 5px;
+}
+
+.multiselect-option-formpreview {
+  align-items: center;
+  gap: 10px;
+}
+
+.multiselect-option-formpreview input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Add this CSS to style the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+ 

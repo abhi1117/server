@@ -1,0 +1,327 @@
+.superadmindash-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.superadmindash-sidebar {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+.superadmindash-logo-container {
+ text-align: center;
+  margin: 20px 0;
+}
+
+.superadmindash-logo img {
+  width: 80px;
+}
+
+.superadmindash-nav-container {
+  margin-top: 20px;
+}
+
+.superadmindash-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.superadmindash-nav li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.superadmindash-nav ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+}
+
+.superadmindash-nav li .superadmindash-nav-icon {
+  margin-right: 10px;
+}
+
+.superadmindash-nav li.active {
+  color: #6d6d6d;
+  font-weight: bold;
+}
+
+.superadmindash-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.superadmindash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.superadmindash-header .superadmindash-search-bar {
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.superadmindash-header .superadmindash-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.superadmindash-header .superadmindash-profile-section .superadmindash-notification-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.superadmindash-header .superadmindash-profile-section .superadmindash-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.superadmindash-header .superadmindash-profile-section .superadmindash-user-initials {
+  margin-right: 10px;
+}
+
+.superadmindash-header .superadmindash-profile-section .superadmindash-user-info .superadmindash-user-details {
+  text-align: right;
+}
+
+.superadmindash-header .superadmindash-profile-section .superadmindash-user-info .superadmindash-user-name {
+  display: flex;
+  align-items: center;
+}
+
+.superadmindash-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.superadmindash-add-founder-button {
+ color: white;
+  background-color: #0183ff;
+  border: 2px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.superadmindash-add-founder-button:hover{
+  color: #007bff;
+  background-color: #fff;
+  border: 2px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.superadmindash-admin-list {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.superadmindash-admin-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.superadmindash-admin-list th,
+.superadmindash-admin-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.superadmindash-admin-list th {
+  background: #f9f9f9;
+}
+
+.superadmindash-admin-list tr:hover {
+  background-color: #F5FAFF;
+  cursor: pointer;
+}
+
+.superadmindash-admin-list th input,
+.superadmindash-admin-list td input {
+  margin: 0;
+}
+
+.superadmindash-table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f9f9f9;
+}
+
+.superadmindash-export-button {
+  background: none;
+  color: #111112;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.superadmindash-export-button .superadmindash-icon {
+  margin-right: 5px;
+}
+
+.superadmindash-export-button:hover {
+  background-color: #F5FAFF;
+}
+
+.superadmindash-pagination {
+  display: flex;
+  align-items: center;
+}
+
+.superadmindash-pagination-button {
+  background: #fff;
+  color: #1c88f8;
+  padding: 5px 10px;
+  border: 1px solid #1c88f8;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.superadmindash-pagination-button.disabled {
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.superadmindash-pagination-info {
+  margin: 0 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.superadmindash-rows-per-page {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.superadmindash-rows-per-page select {
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Modal specific styles */
+.superadmindash-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: auto; /* Add this line */
+}
+
+.superadmindash-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%; /* Adjust this value if necessary */
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-height: fit-content;/* Add this line */
+  overflow-y: auto; /* Add this line */
+}
+
+.superadmindash-modal-title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.superadmindash-form-group {
+  margin-bottom: 15px;
+}
+
+.superadmindash-form-group label {
+  display: block;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.superadmindash-form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.superadmindash-btn-primary {
+  background-color: #1c88f8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  margin-top: 20px;
+}
+
+.superadmindash-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.superadmindash-success-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 25%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.superadmindash-success-modal-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.superadmindash-success-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

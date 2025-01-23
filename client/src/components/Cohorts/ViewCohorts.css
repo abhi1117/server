@@ -1,0 +1,259 @@
+.dashboard-viewcohorts {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .sidebar-viewcohorts {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  border-top: 1px solid #eee;
+  }
+  
+  .logo-container-viewcohorts {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 16px;
+  }
+  
+  .logo-viewcohorts img {
+    width: 100%;
+  }
+  
+  .nav-container-viewcohorts {
+    flex-grow: 1;
+  }
+  
+  .nav-viewcohorts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-viewcohorts ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6d6d6d;
+    font-weight: 600;
+  }
+  
+  .nav-viewcohorts ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-viewcohorts ul li.active,
+  .nav-viewcohorts ul li:hover {
+    background-color: #f5faff;
+    color: #0183ff;
+  }
+  
+  .nav-icon-viewcohorts {
+    margin-right: 10px;
+  }
+  
+  .main-content-viewcohorts {
+  margin-left: 250px;
+    margin-top: 70px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+    overflow-y: scroll;  /* For scroller Firefox */
+    scrollbar-width: thin; /* Reduce the width of the scrollbar */
+   /* scrollbar-color: #007bff #fff;   */
+  }
+  
+  .header-viewcohorts {
+    position: fixed; /* Fix the navbar */
+    top: 0;
+    left: 250px; /* Adjust the position to be next to the sidebar */
+    right: 0;
+    height: 70px; /* Set a height for the header */
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+  border-top: 1px solid #eee;
+  border: 1px solid #eee;
+  }
+  
+  .founder-viewcohorts {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .profile-section-viewcohorts {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info-viewcohorts {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-initials-viewcohorts {
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .user-details-viewcohorts {
+    text-align: left;
+  }
+  
+  .user-name-viewcohorts {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .user-email-viewcohorts {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .logout-button-viewcohorts {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 5px;
+    border-radius: 4px;
+  }
+  
+
+  .cohort-details-viewcohorts {
+    background-color: #fff;
+    padding: 30px;
+    /* border-radius: 8px; */
+    color: #555;
+}
+
+.cohort-details-viewcohorts h3 {
+  font-weight:550;
+  font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.cohort-details-viewcohorts p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+    /* .cohort-poster-viewcohorts {
+    width: auto;
+    height: 100px;  
+  } */
+
+  /** START CHANGE FOR "responsive cohort poster image"  --- **/
+.cohort-poster-viewcohorts {
+  width: 100%;
+  max-width: 300px; /* Adjust this as needed */
+  /* height: auto; */
+  height: 100px;  
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+/** END CHANGE FOR "responsive cohort poster image"  --- **/
+
+  .tabs-viewcohorts {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button-viewcohorts {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .cohort-info-viewcohorts h3 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .cohort-info-viewcohorts p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .cohort-name-viewcohorts {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.back-button-viewcohorts {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.back-button-viewcohorts:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cohort-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .cohort-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cohort-name-viewcohorts {
+    font-size: 20px;
+    font-weight:600;
+  }
+  
+ 

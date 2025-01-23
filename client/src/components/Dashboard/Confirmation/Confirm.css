@@ -1,0 +1,48 @@
+.confirm-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-dialog-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.confirm-dialog-content h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.confirm-dialog-content p {
+  margin: 10px 0;
+}
+
+.confirm-button,
+.reverify-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background: #007bff;
+  color: white;
+}
+
+.reverify-button {
+  background: #6c757d;
+  color: white;
+}

@@ -1,0 +1,72 @@
+.modal-background-applicationsupportingdocuments {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .modal-content-applicationsupportingdocuments {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    z-index: 1010; 
+    animation: fadeInCustomApplicationSupportingDocumentsModal 0.5s ease-out; /* Added keyframe animation */
+  }
+
+  .modal-supportingdocuments-heading-text-applicationsupportingdocuments {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-buttons-applicationsupportingdocuments {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+  }
+  
+  .modal-submit-button-applicationsupportingdocuments {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+} 
+
+.modal-submit-button-applicationsupportingdocuments:hover {
+  background-color: #0056b3;
+}
+
+.modal-cancel-button-applicationsupportingdocuments {   
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  border-radius: 5px;
+} 
+
+.modal-cancel-button-applicationsupportingdocuments:hover {
+ background-color: #e6f7ff;
+}
+
+@keyframes fadeInCustomApplicationSupportingDocumentsModal {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

@@ -1,0 +1,390 @@
+.dashboard-homepage-userdashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-homepage-userdashboard {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  border-top: 1px solid #eee;
+}
+
+.logo-container-homepage-userdashboard {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 16px;
+}
+
+.logo-homepage-userdashboard img {
+  width: 100%;
+}
+
+.nav-container-homepage-userdashboard {
+  flex-grow: 1;
+}
+
+.nav-homepage-userdashboard ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-homepage-userdashboard ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.nav-homepage-userdashboard ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-homepage-userdashboard ul li.active,
+.nav-homepage-userdashboard ul li:hover {
+  background-color: #f5faff;
+  color: #0183ff;
+}
+
+.nav-homepage-userdashboard ul li .nav-icon-homepage-userdashboard {
+  margin-right: 10px;
+}
+
+.main-content-homepage-userdashboard {
+  margin-left: 250px;
+  margin-top: 70px; /* Add margin for fixed navbar */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #efefef;
+}
+
+/* .header-homepage-userdashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+} */
+
+/*** START CHANGE: Fix the navbar ***/
+.header-homepage-userdashboard {
+  position: fixed; /* Fix the navbar */
+  top: 0;
+  left: 250px; /* Adjust to the right of the fixed sidebar */
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  z-index: 999; /* Ensure it stays on top */
+}
+/*** END CHANGE: Fix the navbar ***/
+
+
+.founder-homepage-userdashboard {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-section-homepage-userdashboard {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-homepage-userdashboard {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials-homepage-userdashboard {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details-homepage-userdashboard {
+  text-align: left;
+}
+
+.user-name-homepage-userdashboard {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-homepage-userdashboard {
+  color: #666;
+  font-size: 12px;
+}
+
+.logout-button-homepage-userdashboard {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 4px;
+}
+
+.content-homepage-userdashboard {
+  padding: 2px;
+  /* margin-top: 80px;   */
+}
+
+.user-details-container-userdashboard {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box-userdashboard {
+  margin-bottom: 20px;
+}
+
+.info-box-userdashboard strong {
+  font-weight: bold;
+}
+
+/* //start uer details container */
+.response-item-userdashboard {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.response-key-top-userdashboard {
+  margin-left: 10px;
+}
+
+.number-box-userdashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.response-key-userdashboard {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+.response-value-userdashboard {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.documents-section-userdashboard {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.documents-heading-userdashboard {
+  color: #020202;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.file-item-userdashboard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.file-response-userdashboard {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.file-response-userdashboard:hover {
+  color: rgb(0, 0, 0);
+}
+/** START CHANGE FOR styling form status details in UserDashboard --- **/
+.form-status-details-userdashboard {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+
+.documents-heading-userdashboard {
+  color: #020202;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.response-key-document-userdashboard {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-left: 5px;
+  gap: 55px;
+}
+
+.response-value-file-userdashboard {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.response-item-userdashboard {
+  margin-bottom: 10px;
+}
+
+.response-key-top-userdashboard {
+  margin-left: 10px;
+}
+
+.number-box-userdashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.response-key-userdashboard {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+.response-value-userdashboard {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 15px;
+  font-weight: bold;
+}
+/** END CHANGE FOR styling form status details in UserDashboard --- **/
+.complete-profile-button-userdashboard {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.complete-profile-button-userdashboard:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card-userdashboard {
+  background-color: #fff; /* Keep it light */
+  padding: 15px; /* Reduce padding for a smaller, tighter layout */
+  margin-top: 15px; /* Reduce the margin for spacing */
+  border-radius: 10px; /* Slightly rounded corners for a clean look */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-left: 4px solid #007bff; /* Thin accent color border */                  
+  transition: all 0.3s ease-in-out;
+  max-width: 350px; /* Limit the width to keep it compact */
+  position: relative;
+  overflow: hidden;
+}
+
+.card-userdashboard:hover {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12); /* Slightly larger shadow on hover */
+  transform: translateY(-4px); /* Small upward movement on hover */
+  background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Subtle gradient */
+}
+
+.card-userdashboard h4 {
+  font-size: 15px; /* Slightly smaller text */
+  font-weight: bold;
+  color: #333; /* Keep dark text for readability */
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card-userdashboard p {
+  font-size: 13px; /* Reduce font size for description */
+  color: #666; /* Lighter text for description */
+  margin-bottom: 12px;
+}
+
+.status-userdashboard {
+  display: inline-block;
+  padding: 6px 12px; /* Smaller pill button */
+  background-color: #28a745;  
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;  
+  text-transform: uppercase;
+  margin-right: 8px;
+  font-size: 12px; /* Smaller font for status */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* .status-userdashboard:hover {
+  background-color: #218838;  
+} */
+
+.view-button-userdashboard {
+  display: inline-block;
+  padding: 8px 7px; /* Smaller button */
+  background-color: #007bff; /* Blue for View Details button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  font-size: 12px; /* Smaller font */
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.view-button-userdashboard:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Small upward movement on hover */
+}

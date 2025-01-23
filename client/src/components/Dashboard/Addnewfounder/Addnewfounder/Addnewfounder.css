@@ -1,0 +1,189 @@
+.add-new-founder-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-founder-form {
+  background-color: white;
+  padding-right: 35px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+  border-radius: 10px;
+  width: 420px; /* Increase the width to accommodate two columns */
+}
+
+.add-new-founder-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.add-new-founder-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-new-founder-form .form-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-founder-form .form-column {
+  width: 48%;
+}
+
+.add-new-founder-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-new-founder-form input,
+.add-new-founder-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: auto;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.add-new-founder-form .form-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px;
+}
+
+.add-new-founder-form .form-buttons .save-button,
+.add-new-founder-form .form-buttons .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  width: auto;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 25px; /* Add margin between buttons */
+  font-size: 14px;
+}
+
+.add-new-founder-form .form-buttons .save-button {
+  background-color: #007bff;
+  color: white;
+  width: 100px;
+}
+
+.add-new-founder-form .form-buttons .cancel-button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.file-upload-input {
+  color: #909090; /* Change the color */
+  width: 100px;
+  /* Add any other styles you want for the file input button */
+}
+
+/* If needed, you can style the label as well */
+.file-upload-label {
+  color: #909090;
+  /* Add label styles here */
+}
+
+
+
+/* added */
+
+.add-new-founder-modal {
+  /* Your existing styles */
+}
+
+.add-new-founder-form {
+  /* Your existing styles */
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirm-button,
+.reverify-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.reverify-button {
+  background-color: #ffc107;
+  color: white;
+  margin-left: 10px;
+}
+
+.confirmation-dialog{
+  text-align: center;
+  position: relative;
+}.
+
+.add-new-founder-modal {
+  /* Your existing styles */
+}
+
+.add-new-founder-form {
+  /* Your existing styles */
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  gap: 10px;
+}
+
+.modal-image {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}

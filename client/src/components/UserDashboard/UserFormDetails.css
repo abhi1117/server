@@ -1,0 +1,428 @@
+.dashboard-homepage-userformdetails {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar-homepage-userformdetails { 
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #fff; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    border-top: 1px solid #eee;
+  }
+  
+  .logo-container-homepage-userformdetails {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 16px;
+  }
+  
+  .logo-homepage-userformdetails img {
+    width: 100%;
+  }
+  
+  .nav-container-homepage-userformdetails {
+    flex-grow: 1;
+  }
+  
+  .nav-homepage-userformdetails ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-homepage-userformdetails ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6d6d6d;
+    font-weight: 600;
+  }
+  
+  .nav-homepage-userformdetails ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-homepage-userformdetails ul li.active,
+  .nav-homepage-userformdetails ul li:hover {
+    background-color: #f5faff;
+    color: #0183ff;
+  }
+  
+  .nav-icon-homepage-userformdetails {
+    margin-right: 10px;
+  }
+  
+  .main-content-homepage-userformdetails {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    margin-top: 70px; 
+    overflow-y: scroll;  /* For scroller Firefox */
+    scrollbar-width: thin;  
+    /* scrollbar-color: #007bff #fff; */
+}
+ 
+/*** END CHANGE FOR reducing the vertical scrollbar width specifically for userformdetails --- //
+  
+  /* .header-homepage-userformdetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+  } */
+   /*** START CHANGE FOR fixing the navbar ***/
+.header-homepage-userformdetails {
+    position: fixed; /* Fix the navbar */
+    top: 0;
+    left: 250px; /* Adjust position to the right of the sidebar */
+    right: 0;
+    height: 70px; /* Define height for navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    z-index: 999; /* Ensure navbar stays on top */
+  }
+  /*** END CHANGE FOR fixing the navbar ***/
+  
+  .founder-homepage-userformdetails {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .profile-section-homepage-userformdetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+  
+  .user-info-homepage-userformdetails {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-initials-homepage-userformdetails {
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .user-details-homepage-userformdetails {
+    text-align: left;
+  }
+  
+  .user-name-homepage-userformdetails {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .user-email-homepage-userformdetails {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .logout-button-homepage-userformdetails {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 5px;
+    border-radius: 4px;
+  }
+  
+  .content-homepage-userformdetails {
+    padding: 2px;
+  }
+
+  .user-details-container-userformdetails {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-box-userformdetails {
+    margin-bottom: 20px;
+  }
+  
+  .info-box-userformdetails strong {
+    font-weight: bold;
+  }
+
+  .response-item-userformdetails {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .response-key-top-userformdetails {
+    margin-left: 10px;
+  }
+  
+  .number-box-userformdetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    font-size: small;
+  }
+  
+  .response-key-userformdetails {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8f8f8f;
+    margin-bottom: 5px;
+  }
+  
+  .response-value-userformdetails {
+    font-size: 14px;
+    color: #454545;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  
+  .documents-section-userformdetails {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .documents-heading-userformdetails {
+    color: #020202;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .form-information-heading-userformdetails {
+    color: #020202;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .file-item-userformdetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .file-response-userformdetails {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .file-response-userformdetails:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .form-status-details-userformdetails {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+  }
+
+.documents-heading-userformdetails {
+    color: #020202;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .response-key-document-userformdetails {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8f8f8f;
+    margin-left: 5px;
+    gap: 55px;
+  }
+  
+  .response-value-file-userformdetails {
+    font-size: 14px;
+    color: #454545;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .response-item-userformdetails {
+    margin-bottom: 10px;
+  }
+  
+  .response-key-top-userformdetails {
+    margin-left: 10px;
+  }
+  
+  .number-box-userformdetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    font-size: small;
+  }
+  
+  .response-key-userformdetails {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8f8f8f;
+  }
+  
+  .response-value-userformdetails {
+    font-size: 14px;
+    color: #454545;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+
+  .form-response-section-userformdetails {
+margin-top: 20px;
+  }
+  .user-info-section-userformdetails {
+margin-top: 10px;
+margin-bottom: 50px;
+  }
+
+  .complete-profile-button-userformdetails {
+    color: white;
+    background-color: #0183ff;
+    border: 1px solid #0183ff;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .complete-profile-button-userformdetails:hover {
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #0183ff;
+  }
+
+  /*** START CHANGE FOR Tab button styling --- ***/
+/* .tab-buttons-userformdetails {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  margin-top: 10px;
+} */
+
+.tab-buttons-userformdetails {
+  position: sticky;
+  top: -20px;  
+  z-index: 50;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab-button-userformdetails {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #6d6d6d;
+  position: relative;
+}
+
+.tab-button-userformdetails.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.tab-button-userformdetails.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.tab-button-userformdetails:hover {
+  color: #000000;
+  background-color: #d7ecff;
+  font-weight: bold;
+}
+
+.tab-content-userformdetails {
+  margin-top: 20px;
+}
+/*** END CHANGE FOR Tab button styling --- ***/
+
+.form-timing-section-userformdetails {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+
+.form-status-header-userformdetails {
+  display: flex;
+  justify-content: center; /* Center-align the heading */
+  align-items: center; /* Vertically align items */
+  margin-bottom: 20px;
+  position: relative; /* To allow absolutely positioning the button */
+}
+
+/* Optional: Add spacing and padding to the button */
+.complete-form-button-userformdetails {
+  position: absolute; /* Position button independently */
+  right: 0; /* Align the button to the right */
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.complete-form-button-userformdetails:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}

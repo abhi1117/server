@@ -1,0 +1,56 @@
+import React, { useState, useEffect } from 'react';
+import { Modal, Button, Form } from 'react-bootstrap';
+
+const EditStartupModal = ({ showModal, handleClose, startupId, handleSuccess }) => {
+  const [startupName, setStartupName] = useState('');
+  const [details, setDetails] = useState('');
+
+  useEffect(() => {
+    const fetchStartupDetails = async () => {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`https://incubator.drishticps.org/api/startups/${startupId}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      const data = await response.json();
+      setStartupName(data.name);
+      setDetails(data.details);
+    };
+
+    if (startupId) {
+      fetchStartupDetails();
+    }
+  }, [startupId]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // API call to update startup
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`https://incubator.drishticps.org/api/startups/${startupId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ name: startupName, details })
+      });
+      if (response.ok) {
+        handleSuccess();
+        handleClose();
+      }
+    } catch (error) {
+      console.error('Failed to update startup', error);
+    }
+  };
+
+  return (
+    <Modal show={showModal} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Edit Startup</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+    

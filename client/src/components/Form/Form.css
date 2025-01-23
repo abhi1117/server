@@ -1,0 +1,661 @@
+.dashboard-form {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+} 
+
+.sidebar-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  z-index: 1000;
+  border-top: 1px solid #eee;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container-form {
+  margin-bottom: 20px; 
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 16px;
+}
+
+.logo-form {
+  margin-bottom: 20px;
+}
+
+.logo-form img {
+  width: 100%;
+}
+
+.nav-container-form {
+  flex-grow: 1;
+}
+
+.nav-form ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-form ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.nav-form ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-form ul li.active,
+.nav-form ul li:hover {
+background-color: #f5faff;
+color: #0183ff;
+}
+
+.nav-form ul li .nav-icon-form {
+margin-right: 10px; 
+}
+
+.main-content-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-left: 250px;
+  margin-top: 70px;
+  overflow-y: scroll;  /* For scroller Firefox */
+   scrollbar-width: thin; /* Reduce the width of the scrollbar */
+  /* scrollbar-color: #007bff #fff;   */
+}
+
+.header-form {
+  position: fixed;  
+  top: 0;
+  left: 250px;  
+  right: 0;
+  height: 70px;
+  z-index: 999;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+.founder-form {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.search-bar-form {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.profile-section-form {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon-form {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #eaeaea;
+  padding: 1px;
+  margin-right: 20px;
+}
+
+.user-info-form {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button-form {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 4px;
+}
+
+.user-initials-form {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px; 
+}
+
+.user-details-form {
+  text-align: left;
+}
+
+.user-name-form {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-form {
+  color: #666;
+  font-size: 12px;
+}
+
+.content-form {
+  padding: 1px;
+}
+
+.content-header-form-generalform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header-title-generalform {
+  margin-right: auto;
+  font-size: 20px;
+
+}
+
+.search-bar-container-generalform {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-form-generalform {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-form-button-generalform {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-form-button-generalform:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+.add-form-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.add-form-button:hover {
+  background-color: #0056b3;
+}
+
+/* ///// */
+
+.add-form-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-form-button:hover {
+  background-color: #0056b3;
+}
+
+.form-list-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-filters-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.filter-button-form {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-button-form:hover {
+  background-color: #0056b3;
+}
+
+.form-table-form {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table-form th,
+.form-table-form td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.action-button-form {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.action-button-form.edit {
+  color: blue;
+}
+
+.action-button-form.duplicate {
+  color: green;
+}
+
+.action-button-form.delete {
+  color: red;
+}
+
+.action-button-form:hover {
+  text-decoration: none;
+}
+
+.pagination-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.view-select-form {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-filters-form .filter-button-form {
+  margin-right: 10px;
+}
+
+.form-filters-form .search-form-input {
+  margin-left: auto;
+}
+
+.filter-button-form,
+.search-form-input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-title {
+  cursor: pointer;
+  color: rgb(52, 54, 65);
+  transition: color 0.3s ease;
+}
+
+.form-title:hover {
+  color: blue;
+}
+
+.action-button-form {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.action-button-form .action-icon {
+  font-size: 16px;
+}
+
+.action-button-form.edit {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.action-button-form.duplicate {
+  color: green;
+  border: 1px solid green;
+}
+
+.action-button-form.delete {
+  color: red;
+  border: 1px solid red;
+}
+
+.action-button-form.share {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.action-button-form.view {
+  color: teal;
+  border: 1px solid teal;
+}
+
+.action-button-form:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.action-button-form.edit:hover {
+  background-color: blue;
+  color: white;
+}
+
+.action-button-form.duplicate:hover {
+  background-color: green;
+  color: white;
+}
+
+.action-button-form.delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.action-button-form.share:hover {
+  background-color: orange;
+  color: white;
+}
+
+.action-button-form.view:hover {
+  background-color: teal;
+  color: white;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-modal {
+  position: relative;
+  z-index: 1000;
+}
+
+.pagination-container-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  /* border-top: 1px solid #eee; */
+}
+
+.pagination-form {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-arrow-form {
+  cursor: pointer;
+}
+
+.pagination-arrow-form.disabled {
+  cursor: not-allowed;
+  color: #ddd;
+}
+
+.page-number-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page-number-form .current-page-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.search-bar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-form-button:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-form-button{
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rows-per-page-form {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page-form label {
+  margin-right: 5px;
+}
+
+.rows-per-page-form select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.confirm-delete-ui {  
+  background: #fff;
+  padding: 29px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+}
+
+.confirm-delete-overlay {
+  background: rgba(90, 90, 90, 0.5);
+}
+/*** START CHANGE FOR full background--- ***/
+.confirm-delete-overlay {
+  position: fixed; /* Ensure the overlay covers the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; /* Covers the full width */
+  height: 100vh; /* Covers the full height */
+  z-index: 9999; /* High z-index to ensure it's above all other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents scrolling */
+}
+/* .content-form {
+  padding: 20px;
+} */
+
+.search-bar-container-form {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+ .action-button-form {
+  position: relative;
+}
+
+.delete-button-alert-generalform { 
+  background-color: #ff7878;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+.delete-button-alert-generalform:hover { 
+  background-color: #ff0000;
+}
+
+.modal-button-cancel-no-generalform { 
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;   
+  border-radius: 4px;   
+  cursor: pointer;
+}
+
+.modal-button-cancel-no-generalform:hover {
+  background-color: #e6f7ff;
+}
+
+/* Reduce padding and font size */
+.tooltip-form {
+  position: absolute;
+  background-color: #fff ;
+  color: #333;
+  padding: 3px 7px; /* Reduced padding */
+  border-radius: 3px; /* Reduced border-radius */
+  font-size: 10px; /* Reduced font-size */
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  text-align: center;
+  top: 120%; /* Position the tooltip below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s; 
+  border: 1px solid black;
+}
+
+.tooltip-form::after {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* Position arrow above the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent; /* Arrow pointing up */
+}
+
+[data-tooltip-id]:hover .tooltip-form {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+/* custom-toastify.css */
+
+.Toastify__toast .Toastify__close-button {
+  color: #6c6c6c; /* Default color */
+}
+
+.Toastify__toast .Toastify__close-button:hover,
+.Toastify__toast .Toastify__close-button:focus {
+  color: #000000; /* White color on hover and focus */
+  background-color: transparent; /* Ensure no background color is set */
+  border: none; /* Remove any border */
+  outline: none; /* Remove the default outline */
+}

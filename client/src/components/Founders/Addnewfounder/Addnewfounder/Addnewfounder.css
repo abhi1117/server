@@ -1,0 +1,184 @@
+.add-new-founder-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-new-founder-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px; /* Increase the width to accommodate two columns */
+}
+
+.add-new-founder-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.add-new-founder-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-new-founder-form .form-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-founder-form .form-column {
+  width: 48%;
+}
+
+.add-new-founder-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-new-founder-form input,
+.add-new-founder-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.add-new-founder-form .form-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px;
+}
+
+.add-new-founder-form .form-buttons .save-button,
+.add-new-founder-form .form-buttons .cancel-button {
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin between buttons */
+  font-size: 14px;
+}
+
+.add-new-founder-form .form-buttons .save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-new-founder-form .form-buttons .cancel-button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.file-upload-input {
+  color: #909090;
+}
+
+.file-upload-label {
+  color: #909090;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-box .modal-image {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-box .MuiTypography-h6 {
+  font-weight: 700;
+}
+
+.modal-box .MuiTypography-root {
+  margin-top: 10px;
+  color: #909090;
+  font-size: 13px;
+}
+
+.modal-box .MuiBox-root {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal-box .MuiButton-root {
+  margin-right: 10px;
+}
+
+.modal-box .MuiButton-root:last-child {
+  margin-right: 0;
+}
+
+.confirm-dialog-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.confirm-dialog-content h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.confirm-dialog-content p {
+  margin: 10px 0;
+}
+
+.confirm-dialog-content .confirm-button,
+.confirm-dialog-content .reverify-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-dialog-content .confirm-button {
+  background: #007bff;
+  color: white;
+}
+
+.confirm-dialog-content .reverify-button {
+  background: #6c757d;
+  color: white;
+}

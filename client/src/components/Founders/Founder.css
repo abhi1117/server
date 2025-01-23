@@ -1,0 +1,285 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-container {
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li.active {
+    color: #909090;
+    font-weight: bold;
+}
+
+.nav ul li {
+  padding: 10px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  background-color: none;
+}
+
+.nav ul li.active {
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.nav ul li:hover {
+  background-color:#F5FAFF;
+  color: #007bff;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email {
+  color: #666;
+  font-size: 12px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-founder-button,
+.export-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.add-founder-button:hover,
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.founders-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.founders-list th,
+.founders-list td {
+  padding: 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #111112;
+}
+
+.no-founder {
+  text-align: center;
+}
+
+.no-founder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-founder-content p {
+  margin: 0;
+}
+
+.sorticon {
+  margin-left: 5px;
+}
+
+.drop {
+  font-size: large;
+}
+
+.founder {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination li.disabled a {
+  color: grey;
+  cursor: not-allowed;
+}
+
+.export-table {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.export-icon {
+  margin-right: 5px;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page select {
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-class {
+  max-width: 400px !important; 
+  padding: 20px !important;
+}
+
+.title-class {
+  font-size: 22px;
+  font-weight: bold; 
+}
+
+.text-class {
+  font-size: 16px; 
+  color: #757575; 
+}
+
+.confirm-button-class {
+  background-color: #007bff !important; 
+  color: white !important; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+}
+
+.confirm-button-class:hover {
+  background-color: #0056b3 !important; 
+}

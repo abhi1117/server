@@ -1,0 +1,259 @@
+.login-page-usersignin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    position: relative;
+  }
+  
+  .logo-container-usersignin {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo-usersignin {
+    width: 100px;   
+    height: auto;  
+    margin-top: 15px;  
+    margin-left: 70px; 
+  }
+  
+  .login-container-usersignin {
+    width: 350px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-usersignin {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-usersignin h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group-usersignin {
+    margin-bottom: 15px;
+  }
+  
+  .form-group-usersignin label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group-usersignin input[type="text"],
+  .form-group-usersignin input[type="email"],
+  .form-group-usersignin input[type="password"],
+  .form-group-usersignin input[type="otp"],
+  .form-group-usersignin select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  /* Style for the input when it's focused */
+.form-group-usersignin input[type="text"]:focus,
+.form-group-usersignin input[type="email"]:focus,
+.form-group-usersignin input[type="password"]:focus,
+.form-group-usersignin input[type="otp"]:focus,
+.form-group-usersignin select:focus {
+    border-color: #007bff; /* Blue border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a subtle shadow effect */
+}
+
+  
+  .password-input-container-usersignin {
+    position: relative;
+  }
+  
+  .password-input-container-usersignin input {
+    width: calc(100% - 30px);
+    padding-right: 30px;
+  }
+  
+  .toggle-password-visibility-usersignin {
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    bottom: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Ensures the icon is large enough */
+    color: #333; /* Make sure it's visible */
+     transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+  }
+
+  .toggle-password-visibility-usersignin:hover {
+    background-color: transparent; /* Transparent background on hover */
+    color: gray; /* Gray color on hover */
+}
+  
+  
+  .error-usersignin {
+    color: #d32f2f;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+/* Start - Updated Button Group for Center Alignment */
+.button-group-usersignin {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Align buttons vertically if needed */
+  margin-top: 20px; /* Optional: add some spacing from the inputs */
+}
+
+.button-otp-usersignin,
+.button-submit-usersignin {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto; /* Adjust width to fit the content */
+}
+
+.button-otp-usersignin:hover,
+.button-submit-usersignin:hover {
+  background-color: #0056b3;
+}
+
+
+.resend-button-submit-usersignin {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* width: auto; */
+  width: 48%;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.resend-button-submit-usersignin:hover {
+  background-color: #0056b3;
+}
+/* End - Updated Button Group for Center Alignment */
+/* Default button group center alignment */
+.button-group-usersignin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* When both buttons are shown, align them side by side */
+.button-group-side-by-side {
+  justify-content:center; /* Space between the two buttons */
+  gap: 10px; /* Optional: Add some space between the buttons */
+}
+
+/* Start - Stylish Tab buttons (trending in 2024) */
+.tab-container-usersignin {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 2px solid #e0e0e0; /* Subtle bottom border for the container */
+}
+
+.tab-button-usersignin {
+  background-color: transparent; /* Remove button-like background */
+  border: none; /* No border */
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #6c757d; /* Neutral color */
+  position: relative;
+  transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth color transition */
+  font-weight: 400; /* Normal weight initially */
+}
+
+.tab-button-usersignin.active {
+  color: #007bff; /* Active tab color */
+  font-weight: 600; /* Slightly bold when active */
+}
+
+.tab-button-usersignin:hover {
+  color: #323232; 
+background-color:transparent  ;
+}
+
+.tab-button-usersignin::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007bff; /* Underline in primary color */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.tab-button-usersignin.active::before,
+.tab-button-usersignin:hover::before {
+  transform: scaleX(1); /* Show underline when active or hovered */
+}
+
+/* Start - Stylish 'Forgot password?' */
+.forgot-password-link-usersignin {
+  color: #007bff;
+  text-align: right;
+  cursor: pointer;
+    font-size: 1rem;
+  font-weight:500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forgot-password-link-usersignin:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+/* End - Stylish 'Forgot password?' */
+
+/* Start - Stylish 'Forgot Password' heading */
+.forgot-password-heading-usersignin {
+  font-size: 1.5rem;
+  font-weight:bold;
+  text-align: center;
+  color: #323232;
+  margin-bottom: 20px;
+  }
+/* End - Stylish 'Forgot Password' heading */
+
+/* Start - Stylish 'Login' link */
+.back-to-login-link-usersignin {
+  text-align: center;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight:500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.back-to-login-link-usersignin:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+/* End - Stylish 'Login' link */
+

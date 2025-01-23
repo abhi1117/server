@@ -1,0 +1,120 @@
+/* Modal overlay */
+.modal-overlay-editcolumnsmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* *** START CHANGE for scroll&keyframe --- */
+
+/* Modal content */
+.modal-content-editcolumnsmodal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px; /* Increase width */
+  max-width: 90%;
+  max-height: 80%; /* Limit the height */
+  overflow-y: auto; /* Enable vertical scroll */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  animation: fadeInCustomeditcolumnsmodal 0.5s ease-out;
+}
+
+/* *** START CHANGE for closeModal --- */
+.modal-header-editcolumnsmodal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .close-button-editcolumnsmodal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(182, 182, 182);
+  }
+  
+  .close-button-editcolumnsmodal:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  /* *** END CHANGE FOR closeModal --- */
+
+.modal-body-editcolumnsmodal {
+  margin-top: 20px;
+}
+
+.checkbox-wrapper-editcolumnsmodal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkbox-label-editcolumnsmodal {
+  margin-left: 10px; /* Gap between checkbox and label */
+}
+/* Modal footer */
+.modal-footer-editcolumnsmodal {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Animation keyframe for modal */
+@keyframes fadeInCustomeditcolumnsmodal {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+ 
+/* Scrollable body styling */
+.modal-content-editcolumnsmodal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content-editcolumnsmodal::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor:move;
+}
+
+.footer-save-changes-button-editcolumnsmodal {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-save-changes-button-editcolumnsmodal:hover {
+  background-color: #0056b3;
+}
+
+.footer-close-button-editcolumnsmodal {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-close-button-editcolumnsmodal:hover {
+  background-color: #e6f7ff;
+}

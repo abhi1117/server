@@ -1,0 +1,610 @@
+.dashboard-formevaluatordashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebarevaluatordashboard {
+  position: fixed; /* Make the sidebar fixed */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  z-index: 1000;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #eee;
+}
+
+.logo-containerevaluatordashboard {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 16px;
+} 
+ 
+.logoevaluatordashboard {
+  margin-bottom: 20px;
+}
+
+.logoevaluatordashboard img {
+  width: 100%;
+}
+
+.nav-containerevaluatordashboard {
+  flex-grow: 1;                          
+}
+
+.navevaluatordashboard ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navevaluatordashboard ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.navevaluatordashboard ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navevaluatordashboard ul li.active,
+.navevaluatordashboard ul li:hover {
+background-color: #f5faff;
+color: #0183ff;
+}
+
+.navevaluatordashboard ul li .nav-icon-evaluatordashboard {
+margin-right: 10px; 
+}
+
+.main-content-formevaluatordashboard {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-left: 250px; /* Offset for the fixed sidebar */
+  margin-top: 70px; /* Offset for the fixed header */
+  overflow-y: auto; /* Enable scrolling for the content */
+  scrollbar-width: thin; /* Reduce the width of the scrollbar */
+
+}
+
+.header-formevaluatordashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  position: fixed; /* Fix the header */
+  top: 0;
+  left: 250px; /* Align with the fixed sidebar */
+  width: calc(100% - 250px); /* Adjust width to account for the sidebar */
+  z-index: 100; /* Ensure it stays on top */
+  border-top: 1px solid #eee;
+  height: 70px;
+}
+.founder-formevaluatordashboard {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.search-bar-formevaluatordashboard {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.profile-section-formevaluatordashboard {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon-formevaluatordashboard {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #EAEAEA;
+  padding: 1px;
+  margin-right: 20px;
+}
+
+.logout-button-formevaluatordashboard {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 4px;
+}
+
+.user-info-formevaluatordashboard {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info-formevaluatordashboard-profile-image {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px; 
+}
+
+.user-initials-formevaluatordashboard {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details-formevaluatordashboard {
+  text-align: left;
+}
+
+.user-name-formevaluatordashboard {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-formevaluatordashboard {
+  color: #666;
+  font-size: 12px;
+}
+
+.content-formevaluatordashboard {
+  padding: 1px;
+}
+
+.content-header-formevaluatordashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-header-formevaluatordashboard h2 {
+  font-size: 24px;
+}
+
+.add-form-buttonevaluatordashboard {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-form-buttonevaluatordashboard:hover {
+  background-color: #0056b3;
+}
+
+.form-list-formevaluatordashboard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-filters-formevaluatordashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form-inputevaluatordashboard {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.filter-button-formevaluatordashboard {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-button-formevaluatordashboard:hover {
+  background-color: #0056b3;
+}
+
+.form-table-formevaluatordashboard {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table-formevaluatordashboard th, .form-table-formevaluatordashboard td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.action-button-formevaluatordashboard {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.action-button-formevaluatordashboard.edit {
+  color: blue;
+}
+
+.action-button-formevaluatordashboard.duplicate {
+  color: green;
+}
+
+.action-button-formevaluatordashboard.delete {
+  color: red;
+}
+
+.action-button-formevaluatordashboard:hover {
+  text-decoration: none;
+}
+
+.pagination-formevaluatordashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.view-select-formevaluatordashboard {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.content-header-formevaluatordashboard .add-form-buttonevaluatordashboard {
+  margin-left: auto;
+}
+
+.form-filters-formevaluatordashboard .filter-button-formevaluatordashboard {
+  margin-right: 10px;
+}
+
+.form-filters-formevaluatordashboard .search-form-inputevaluatordashboard {
+  margin-left: auto;
+}
+
+.filter-button-formevaluatordashboard,
+.search-form-inputevaluatordashboard {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.unique-button-containerevaluatordashboard {
+  display: flex;
+  gap: 10px;
+}
+
+.unique-add-form-buttonevaluatordashboard {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.unique-add-form-buttonevaluatordashboard:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.unique-evaluation-startup-buttonevaluatordashboard {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.unique-evaluation-startup-buttonevaluatordashboard:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.eva-form-titleevaluatordashboard {
+  cursor: pointer;
+  color: rgb(52, 54, 65);
+  transition: color 0.3s ease;
+}
+
+.eva-form-titleevaluatordashboard:hover {
+  color: blue;
+}
+
+.unique-action-button-formevaluatordashboard {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.unique-action-button-formevaluatordashboard .unique-action-iconevaluatordashboard {
+  font-size: 16px; 
+}
+
+.unique-action-button-formevaluatordashboard.edit {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.unique-action-button-formevaluatordashboard.duplicate {
+  color: green;
+  border: 1px solid green;
+}
+
+.unique-action-button-formevaluatordashboard.delete {
+  color: red;
+  border: 1px solid red;
+}
+
+.unique-action-button-formevaluatordashboard.share {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.unique-action-button-formevaluatordashboard:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.unique-action-button-formevaluatordashboard.edit:hover {
+  background-color: blue;
+  color: white;
+}
+
+.unique-action-button-formevaluatordashboard.duplicate:hover {
+  background-color: green;
+  color: white;
+}
+
+.unique-action-button-formevaluatordashboard.delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.unique-action-button-formevaluatordashboard.share:hover {
+  background-color: orange;
+  color: white;
+}
+
+.delete-button-alert-yes-evaevaluatordashboard { 
+  background-color: #ff7878;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+.delete-button-alert-yes-evaevaluatordashboard:hover { 
+  background-color: #ff0000;
+}
+
+.modal-button-cancel-no-evaevaluatordashboard {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;  
+  border-radius: 4px;   
+  cursor: pointer;
+}
+
+.modal-button-cancel-no-evaevaluatordashboard:hover {
+  background-color: #e6f7ff;
+}
+
+.pagination-container-formevaluatordashboard {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  /* border-top: 1px solid #eee; */
+}
+
+.pagination-formevaluatordashboard {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-arrow-formevaluatordashboard {
+  cursor: pointer;
+}
+
+.pagination-arrow-formevaluatordashboard.disabled { 
+  cursor: not-allowed;
+  color: #ddd;
+}
+
+.page-number-formevaluatordashboard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page-number-formevaluatordashboard .current-page-formevaluatordashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.rows-per-page-formevaluatordashboard {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page-formevaluatordashboard label {
+  margin-right: 5px;
+}
+
+.rows-per-page-formevaluatordashboard select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Custom UI for the confirmation dialog */
+.custom-ui-delete-evaevaluatordashboard {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.custom-overlay-delete-evaevaluatordashboard {
+  background: rgba(90, 90, 90, 0.5);
+}
+/*** START CHANGE FOR full background--- ***/
+.custom-overlay-delete-evaevaluatordashboard {
+  position: fixed; /* Ensures it covers the full viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; /* Covers full width */
+  height: 100vh; /* Covers full height */
+   z-index: 9999; /* High z-index to be above everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.add-form-button:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-form-button{
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.unique-action-button-formevaluatordashboard {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #fff ;
+  color: #333;
+  padding: 3px 7px; /* Reduced padding */
+  border-radius: 3px; /* Reduced border-radius */
+  font-size: 10px; /* Reduced font-size */
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  text-align: center;
+  top: 120%; /* Position the tooltip below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s; 
+  border: 1px solid black;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* Position arrow above the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent; /* Arrow pointing up */
+}
+
+[data-tooltip-id]:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
+
+

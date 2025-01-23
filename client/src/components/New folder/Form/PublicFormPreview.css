@@ -1,0 +1,461 @@
+.custom-background-publicformpreview {
+  /* background-color: #b3d2ff; */
+  /* background: linear-gradient(135deg, #8ac3ff, #dbedff); */
+  /* background: linear-gradient(135deg, #c1defd, #dbedff); */
+  /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-public-form-preview-publicformpreview {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 8px;
+  /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  */
+  background-color: #ffffff;
+}
+
+.header-publicformpreview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-publicformpreview {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header-text-publicformpreview {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-title-publicformpreview {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.company-subtitle-publicformpreview {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.custom-form-title-publicformpreview {
+  font-size: 28px;
+  color: #333;
+  font-weight: 550;
+  margin-bottom: 30px;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.custom-form-publicformpreview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -20px;
+}
+
+/* .custom-form-row-publicformpreview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;  
+} */
+.custom-form-row-publicformpreview {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px;   */
+}
+
+/* .custom-form-group-publicformpreview {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+} */
+/* Adjust the width of the form group for top-to-bottom layout */
+.custom-form-group-publicformpreview {
+  width: 100%;
+}
+/* Container to ensure input directly below the label */
+.custom-form-input-container-publicformpreview {
+  margin-top: 5px; /* Adjust spacing between label and input */
+}
+.custom-form-label-publicformpreview { 
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.required-publicformpreview {
+  color: red;
+  margin-left: 5px;
+}
+
+.custom-note-container-publicformpreview {
+  margin-top: 10px; /* Add spacing above the ReactQuill input */
+  margin-bottom: 20px; /* Add spacing below the ReactQuill input */
+}
+
+.custom-form-input-publicformpreview {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+  margin-bottom: 20px; /* Add spacing to prevent overlap , add this after ReactQuill*/
+  width: 100%; /* Make the input field take full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.custom-form-input-publicformpreview:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.custom-form-submit-button-publicformpreview,
+.custom-form-clear-button-publicformpreview {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+}
+/* form.custom-form-publicformpreview .custom-form-submit-button-publicformpreviewfinalsave {
+  width: 13%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+form.custom-form-publicformpreview .custom-form-submit-button-publicformpreviewfinalsave:hover {
+  background-color: #005ec2;
+} */
+form.custom-form-publicformpreview .custom-form-submit-button-publicformpreviewfinalsave,
+form.custom-form-publicformpreview .custom-form-save-draft-button {
+  width: 13%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+form.custom-form-publicformpreview .custom-form-submit-button-publicformpreviewfinalsave:hover,
+form.custom-form-publicformpreview .custom-form-save-draft-button:hover {
+  background-color: #005ec2; /* Same hover color */
+}
+
+
+.custom-form-save-draft-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.custom-form-save-draft-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-form-clear-button-publicformpreview {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: auto;
+}
+
+.custom-form-clear-button-publicformpreview:hover {
+  background-color: #e6f7ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.form-buttons-publicformpreview {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px; /* Additional margin for better spacing */
+}
+
+.custom-form-input-publicformpreview.error-publicformpreview {
+  border-color: red;
+}
+
+.error-message-publicformpreview {
+  color: red;
+  font-size: 12px;
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+}
+
+.error-icon-publicformpreview {
+  margin-right: 5px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px;
+  width: 15px;
+  height: 15px;
+}
+
+.character-limit-publicformpreview {
+  text-align: right;
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.checkbox-group-publicformpreview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-label-publicformpreview {
+  font-weight: 100;
+}
+
+/* Styling for the radio buttons - highlighted changes start */
+.radio-group-publicformpreview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 1px; /* Increased gap between radio buttons and options */
+}
+
+.option-label-publicformpreview-radio {
+  font-weight: 100;
+  font-size: 14px;
+}
+/* highlighted changes end */
+
+/* Thank you message styling */
+/*** START CHANGE FOR "display Thank you message"  --- ***/
+.thank-you-message-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f4fd;
+  z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+.thank-you-message-publicformpreview {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #b5e2fc;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container-publicformpreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 67px;
+  height: 67px;
+  background: #eff6ff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container-publicformpreview svg {
+  width: 48px;
+  height: 48px;
+}
+
+.thank-you-message-publicformpreview h2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 30px;
+}
+
+/* .response-page-publicformpreview {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.response-page-publicformpreview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f4fd;
+  z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+.response-message-container-publicformpreview {
+  /* background-color: #ffffff;  */
+  background-color: #c9f3ff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.response-title-publicformpreview {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.response-text-publicformpreview {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+/* START: Add styles to ensure the "Contact Number" input matches the size of other inputs */
+.phone-input-formpreview .custom-form-inputformpreview,
+.phone-input-publicformpreview .custom-form-input-publicformpreview {
+  width: 100% !important; /* Make the width of the phone input 100% */
+  padding: 10px; /* Add padding to match other input fields */
+  border: 1px solid #ccc; /* Add a border to match other input fields */
+  border-radius: 4px; /* Add border radius to match other input fields */
+  font-size: 14px; /* Set the font size to match other input fields */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  height: auto;
+  width: auto;
+}
+
+.react-tel-input .form-control {
+  width: 401px;
+  height: 42px;
+  background-color: #f9f9f9;
+  width: 100% !important; /* Make the phone input field take full width */
+}
+/*** START CHANGE for copyright ***/
+.copyright-publicformpreview {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+  font-weight: 400;
+}
+/** START CHANGE FOR style in number--- **/
+.number-container-publicformpreview {
+  display: inline-flex;
+}
+
+.number-circle-publicformpreview {
+  display: inline-block;
+  background-color: white;
+  color: #007bff;
+  width: 26px;
+  height: 20px;
+  border-radius: 25%;
+  border: 1px solid #007bff;
+  text-align: center;
+  line-height: 18px;
+  /* font-weight: bold; */
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* Fix for conditional label not inheriting number style */
+.conditionally-displayed-field {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* button changes to "Submitting..." or "Saving..." */
+.custom-form-submit-button-publicformpreviewfinalsave,
+.custom-form-save-draft-button {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form-submit-button-publicformpreviewfinalsave[disabled],
+.custom-form-save-draft-button[disabled] {
+  background-color: #0056b3; /* Lighter shade for disabled state */
+  cursor: not-allowed;
+  opacity: 0.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* button style during "Submitting..." or "Saving..."  */
+.custom-form-submit-button-publicformpreviewfinalsave[disabled]::before,
+.custom-form-save-draft-button[disabled]::before {
+  content: "";
+  position: absolute;
+  cursor: not-allowed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(173, 216, 230, 0.6) 25%,
+    rgba(70, 130, 180, 0.7) 50%,
+    rgba(173, 216, 230, 0.6) 75%
+  ); /* Stylish blue gradient */
+  background-size: 200% 100%;
+  animation: loading-progress 1.5s infinite linear;
+  /* Slows down the animation and runs only once */
+  /* animation: loading-progress 3s linear 1;  */
+}
+
+.custom-form-submit-button-publicformpreviewfinalsave:hover,
+.custom-form-save-draft-button:hover {
+  background-color: #004080; /* Darker blue on hover for a sleek look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes loading-progress {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+ 

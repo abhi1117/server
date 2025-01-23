@@ -1,0 +1,175 @@
+/* Misdoc.css */
+
+.Misdoc {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.logo-container {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-container {
+  padding: 0;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #909090;
+}
+
+.nav-item:hover {
+  color: #0183FF;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.founder {
+  font-size: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.user-details {
+  text-align: right;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.drop {
+  font-size: 20px;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #666;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.tab.active {
+  background-color: #f5f5f5;
+  border-bottom: none;
+}
+
+.documents-list {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 8px 8px;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.document-item:last-child {
+  border-bottom: none;
+}
+
+.mandatory {
+  color: #ffa500;
+  font-weight: bold;
+  text-align: left;
+  position: left;
+}
+
+.upload-button {
+  background-color: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}

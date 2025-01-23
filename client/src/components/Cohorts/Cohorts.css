@@ -1,0 +1,454 @@
+.dashboard-homepage-cohorts {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-homepage-cohorts {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fixed position to stay in place */
+  height: 100vh; /* Full height of the viewport */
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Prevent scrolling within the sidebar */
+  z-index: 100; /* Ensure the sidebar is above other content */
+  border-top: 1px solid #eee;
+}
+
+.logo-container-homepage-cohorts {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 16px;
+}
+
+.logo-homepage-cohorts img {
+  width: 100%;
+}
+
+.nav-container-homepage-cohorts {
+  flex-grow: 1;
+}
+
+.nav-homepage-cohorts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-homepage-cohorts ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.nav-homepage-cohorts ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-homepage-cohorts ul li.active,
+.nav-homepage-cohorts ul li:hover {
+  background-color: #f5faff;
+  color: #0183ff;
+}
+
+.nav-homepage-cohorts ul li .nav-icon-homepage-cohorts {
+  margin-right: 10px;
+}
+
+.main-content-homepage-cohorts {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-left: 250px; /* Ensure space for the fixed sidebar */
+  margin-top: 70px; /* Ensure space for the fixed header */
+  overflow-y: auto; /* Enable scrolling for the content */
+  scrollbar-width: thin; /* Narrow scrollbar for Firefox */
+}
+
+.header-homepage-cohorts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  /* margin-bottom: 20px; */
+  position: fixed; /* Fixed position to stay in place */
+  top: 0;
+  left: 250px; /* Adjust for the fixed sidebar width */
+  width: calc(100% - 250px); /* Adjust width to account for the sidebar */
+  z-index: 100; /* Ensure the header is above other content */
+  border-top: 1px solid #eee;
+  border: 1px solid #eee;
+  height: 70px;
+}
+
+.founder-homepage-cohorts {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile-section-homepage-cohorts {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-homepage-cohorts {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials-homepage-cohorts {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details-homepage-cohorts {
+  text-align: left;
+}
+
+.logout-button-homepage-cohorts {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 4px;
+}
+
+.user-name-homepage-cohorts {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-homepage-cohorts {
+  color: #666;
+  font-size: 12px;
+}
+
+.content-homepage-cohorts {
+  padding: 20px;
+}
+
+.cohorts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cohorts-list-cohorts {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: flex-start; /* Align cards to the left */
+  gap: 10px; /* Add gap between cards */
+
+}
+
+.cohort-card-cohorts {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  margin: 10px;
+  width: 23%;  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  flex-grow: 1;
+  min-width: 250px; /* Minimum width for cards */
+  flex-basis: calc(25% - 20px); /* Ensure 4 cards in a row */
+  max-width: calc(24% - 20px); /* For large screens, maintain 4 cards */
+
+ }
+
+.cohort-card-cohorts:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  background-color: #f1f8ff;
+}
+
+/** START CHANGE FOR "responsive cohort poster image" --- **/
+.cohort-poster {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set a reasonable maximum height for larger screens */
+  min-height: 190px; /* Ensure a minimum height for smaller images */
+    /* Ensure the image is contained without cropping */
+   /* object-fit: contain;   */
+   object-fit: fill;
+   background-image: none; /* No background color or image */
+
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+/** Default screen size with 4 cards per row **/
+@media (min-width: 1200px) {
+  .cohort-card-cohorts {
+    width: calc(25% - 20px); /* Adjust for four cards in a row */
+  }
+}
+
+/** For medium screens (up to 1200px), with 3 cards per row **/
+@media (max-width: 1200px) {
+  .cohort-card-cohorts {
+    flex-basis: calc(33.33% - 20px); /* 3 cards per row */
+  
+  }
+  .cohort-poster {
+    max-height: 180px;
+  }
+}
+
+/** For smaller screens (up to 768px), with 2 cards per row **/
+@media (max-width: 768px) {
+  .cohort-card-cohorts {
+    flex-basis: calc(50% - 20px); /* 2 cards per row */
+
+   }
+  .cohort-poster {
+    max-height: 150px;
+  }
+}
+
+/** For extra small screens (up to 480px), full width (1 card per row) **/
+@media (max-width: 480px) {
+  .cohort-card-cohorts {
+    flex-basis: calc(100% - 20px); /* 1 card per row */
+ 
+  
+  }
+  .cohort-poster {
+    max-height: 120px;
+  }
+}
+
+/** END CHANGE FOR "responsive cohort poster image" --- **/
+
+.cohort-name {
+  font-size: 20px;    
+  font-weight: bold;
+  margin-bottom: 10px;
+} 
+
+.cohort-status {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.cohort-card-actions-cohorts {
+  margin-top: 5px;
+}
+
+.view-button-cohorts {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 5px 5px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.edit-button-cohorts {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 5px 5px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button-cohorts:hover {
+  /* background-color: #0056b3; */
+  background-color: #e6f7ff;
+}
+.edit-button-cohorts:hover {
+  /* background-color: #0056b3; */
+  background-color: #e6f7ff;
+}
+
+.delete-cohorts {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 5px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-cohorts {
+  background-color: #ffffff;
+  border: 1px solid #f83d3d;
+  color: #f83d3d;
+}
+
+.delete-cohorts:hover {
+  background-color: #f7e9e9;
+}
+
+.cohort-statsmain {
+  margin-top: 0px;
+  justify-content: space-between;
+}
+
+.cohort-stats {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the text inside the card */
+  gap: 5px; /* Ensure small spacing between Pipelines and Applications */
+}
+.cohort-stats:hover {
+  justify-content: center;
+  margin-top: 10px;
+}
+.cohort-stats-pipelines {
+  color: #007bff;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: medium;
+  display: block;
+  text-align: center; /* Ensure text is centered */
+  margin: 0; /* Remove unnecessary margins */
+}
+.cohort-stats-pipelines:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cohort-stats-applications {
+  color: #444444;
+   font-size: medium;
+  display: block;
+  text-align: center; /* Ensure text is centered */
+  margin: 0;  
+}
+
+
+.add-new-button-cohorts {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-new-button-cohorts:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* START CHANGE FOR DELETE COHORT MODAL */
+/*** START CHANGE FOR full viewport background overlay --- ***/
+.custom-overlay-cohort {
+  position: fixed; /* Ensures it covers the full viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; /* Covers full width */
+  height: 100vh; /* Covers full height */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  z-index: 9999; /* High z-index to be above everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/*** END CHANGE FOR full viewport background overlay --- ***/
+.custom-ui-cohort {
+  padding: 30px;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+}
+
+.custom-ui-cohort h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-ui-cohort p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button-group-cohort {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delete-button-cohort { 
+  background-color: #ff7878;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.delete-button-cohort:hover { 
+  background-color: #ff0000;
+}
+
+.cancel-button-cohort { 
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button-cohort:hover { 
+  background-color: #e6f7ff;
+}
+
+.custom-overlay-cohort {
+  background: rgba(90, 90, 90, 0.5);
+}

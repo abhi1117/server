@@ -1,0 +1,855 @@
+.dashboard-homepage-allapplications {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* .sidebar-homepage-allapplications { 
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+} */
+
+.logo-container-homepage-allapplications {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 16px;
+}
+
+.logo-homepage-allapplications img {
+  width: 100%;
+}
+
+.nav-container-homepage-allapplications {
+  flex-grow: 1;
+}
+
+.nav-homepage-allapplications ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-homepage-allapplications ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.nav-homepage-allapplications ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-homepage-allapplications ul li.active,
+.nav-homepage-allapplications ul li:hover {
+  background-color: #f5faff;
+  color: #0183ff;
+}
+
+.nav-homepage-allapplications ul li .nav-icon-homepage-allapplications {
+  margin-right: 10px;
+}
+
+.main-content-homepage-allapplications {
+  margin-top: 70px; /* Height of the fixed header */
+  margin-left: 250px; /* Width of the fixed sidebar */
+  overflow-y: scroll; /* For scroller Firefox */
+  scrollbar-width: thin; /* Reduce the width of the scrollbar */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.header-homepage-allapplications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+.founder-homepage-allapplications {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile-section-homepage-allapplications {
+  display: flex;
+  align-items: center;
+}
+
+.user-info-homepage-allapplications {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials-homepage-allapplications {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details-homepage-allapplications {
+  text-align: left;
+}
+
+.logout-button-homepage-allapplications {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 4px;
+}
+
+.user-name-homepage-allapplications {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-homepage-allapplications {
+  color: #666;
+  font-size: 12px;
+}
+
+.content-homepage-allapplications {
+  padding: 10px;
+}
+
+.title-rounds-container {
+  /* display: flex; */
+  align-items: center;
+  gap: 10px;
+}
+
+.applications-table-allapplications table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applications-table-allapplications th,
+.applications-table-allapplications td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.applications-table-allapplications th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.applications-table-allapplications tr:hover {
+  background-color: #f1f8ff;
+}
+
+.custom-response-header-allapplications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.custom-button-export-allapplications {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-button-export-allapplications:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*** START CHANGE FOR tab button styling ***/
+
+.pipeline-tabs-allapplications {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tab-button-allapplications {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #6d6d6d;
+  position: relative;
+}
+
+.tab-button-allapplications.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.tab-button-allapplications.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.tab-button-allapplications:hover {
+  color: #000000;
+  background-color: #d7ecff;
+  font-weight: bold;
+}
+
+/*** END CHANGE FOR tab button styling ***/
+.sorticon-applications {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.sorticon-applications:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.view-details-button-applications {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.view-details-button-applications:hover {
+  color: #020202;
+  background-color: #e9f3ff;
+  font-size: 13px;
+}
+
+.response-details-applications {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+.custom-response-details-applications {
+  margin-bottom: 20px;
+}
+
+/*** START CHANGE for Back to Applications alignment--- ***/
+
+.header-with-button-applications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-back-to-applications {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-back-to-applications:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*** END CHANGE FOR Back to Applications alignment --- ***/
+
+.response-item-applications {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.response-key-top-allapplications {
+  margin-left: 10px;
+}
+.number-box-allapplications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: small;
+}
+.response-key-allapplications {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+.response-key-document-allapplications {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-left: 5px;
+  gap: 55px;
+}
+
+.response-value-allapplications {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.response-value-file-allapplications {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/*** START CHANGE for documents section styling in Applications --- ***/
+
+.documents-section-applications {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.documents-heading-applications {
+  color: #020202;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.file-item-applications {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.file-response-applications {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.file-response-applications:hover {
+  color: rgb(0, 0, 0);
+}
+
+.link-response-applications {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-response-applications:hover {
+  color: black;
+}
+
+/* Existing styles here... */
+
+/*** START CHANGE FOR pagination --- ***/
+.pagination-container-applications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-applications {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-arrow-applications {
+  cursor: pointer;
+  margin: 0 10px;
+  background-color: transparent;
+  color: #0183ff;
+}
+
+.pagination-arrow-applications.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: transparent;
+  color: #ccc;
+}
+
+.page-number-applications {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page-number-applications .current-page-applications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.rows-per-page-applications {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page-applications select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.rows-info-applications {
+  font-size: 14px;
+  color: #666;
+}
+/*** END CHANGE FOR pagination --- ***/
+
+/* ////////////for table scroll12 */
+
+/* Sidebar Fixed Position */
+.sidebar-homepage-allapplications {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Ensure it stays on top */
+  border-top: 1px solid #eee;
+}
+
+/* Ensure main content shifts to the right to accommodate fixed sidebar */
+.main-content-homepage-allapplications {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  overflow-y: scroll; /* For scroller Firefox */
+  scrollbar-width: thin; /* Reduce the width of the scrollbar */
+  /* scrollbar-color: #007bff #fff;   */
+}
+
+/* Fix the header (for tabs) */
+.header-homepage-allapplications {
+  top: 0;
+  left: 250px;
+  position: fixed;
+  width: calc(100% - 250px); /* Sidebar width subtracted */
+  z-index: 100;
+  top: 0;
+  left: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Main content should start below the fixed header */
+.main-content-homepage-allapplications {
+  margin-top: 50px;
+}
+
+/* Table Horizontal Scrolling */
+.applications-table-allapplications {
+  display: block;
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping of columns */
+}
+
+/* Fix the first column (Applicant) */
+.applications-table-allapplications th:first-child,
+.applications-table-allapplications td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+/* Fix table header (for all columns) */
+.applications-table-allapplications th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Fixed header for tabs */
+.pipeline-tabs-allapplications {
+  position: sticky;
+  top: -20px;
+  z-index: 50;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Modify table hover style */
+.applications-table-allapplications tr:hover {
+  background-color: #f1f8ff;
+}
+/* Add the same styles for the new form timing section */
+/*** START CHANGE FOR Form Status section styles ***/
+.form-timing-section-allapplications {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+
+.response-item-applications {
+  /* display: flex; */
+  margin-bottom: 20px;
+}
+
+.response-key-top-allapplications {
+  margin-left: 10px;
+}
+
+.number-box-allapplications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.response-key-allapplications {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+.response-value-allapplications {
+  font-size: 14px;
+  color: #454545;
+  margin-left: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/*** END CHANGE FOR Form Status section styles ***/
+
+.file-item-allapplications {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: none;  
+  background: none;  
+  gap: 5px;  
+
+}
+.file-item-allapplications {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: none;  
+  background: none;  
+  gap: 5px;  
+
+}
+
+.number-box-allapplications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 5px;
+  font-size: small;
+}
+.documents-section-allapplications {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  margin-bottom: 50px;
+}
+
+.documents-heading-allapplications {
+  color: #020202;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.file-response-allapplications {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.file-response-allapplications:hover {
+  color: rgb(0, 0, 0);
+}
+
+.documents-section-allapplications {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.round-info-allapplications {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.round-name-allapplications {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f1f8ff;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid  #007bff; */
+}
+
+.round-name-allapplications.active-round {
+  background-color: #ffffff;
+  color: #2c92ff;
+  font-weight: 700;
+}
+
+.round-name-allapplications:hover {
+  background-color: #48a0ff;
+  color: #ffffff;
+}
+/* //for next round icon and previous round */
+.custom-button-next-stage-allapplications,
+.custom-button-previous-stage-allapplications {
+  display: inline-flex;
+  align-items: center;
+  background-color: #bcdcff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 5px;
+}
+
+.custom-button-next-stage-allapplications:hover,
+.custom-button-previous-stage-allapplications:hover {
+  background-color: #b9dbff;
+}
+
+.custom-button-next-stage-allapplications span,
+.custom-button-previous-stage-allapplications span {
+  display: inline-block;
+}
+
+.custom-button-next-stage-allapplications:hover {
+  background-color: #28a745; /* Green shade for hover effect */
+}
+
+.custom-button-previous-stage-allapplications:hover {
+  background-color: #fb96a0; /* Red shade for hover effect */
+}
+
+.button-group-allapplications {
+  display: flex;
+  gap: 10px;
+}
+
+.button-print-response-allapplications {
+  color: white;
+  background-color: #0183ff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-print-response-allapplications:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+}
+
+/* @media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .custom-response-details-applications,
+  .custom-response-details-applications * {
+    visibility: visible;
+  }
+
+  .custom-response-details-applications {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+} */
+
+
+
+
+
+/* //print section12 */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .custom-response-details-applications,
+  .custom-response-details-applications * {
+    visibility: visible;
+  }
+
+  .custom-response-details-applications {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    color: #000;
+    line-height: 1.5;
+    padding: 20px;
+  }
+
+  .documents-heading-allapplications {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .response-item-applications {
+     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .response-key-allapplications {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+  }
+
+  .response-value-allapplications {
+    font-size: 14px;
+    color: #333;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+
+  .number-box-allapplications {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px;
+  }
+
+  .documents-section-allapplications {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+  .documents-data-section-allapplications {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 50px;
+        padding: 15px;
+      border: none;  
+      background-color: #f9f9f9;
+  }
+
+  .file-item-allapplications {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .file-response-allapplications {
+    color: #007bff;
+    text-decoration: underline;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  hr {
+    border: 0.5px solid #ddd;
+    margin: 15px 0;
+  }
+
+  .form-timing-section-allapplications {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+}

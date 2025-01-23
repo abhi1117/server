@@ -1,0 +1,136 @@
+
+
+.email-verification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  width: 70px;
+  height: 65px;
+  margin-bottom: 20px;
+}
+
+.verification-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.head1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.otp-container input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.resend-text {
+  margin-top: 10px;
+  color: #8a8a8a;
+}
+
+.resend-text button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wide-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wide-button:hover {
+  background-color: #0056b3;
+}
+
+.wide-button2 {
+  background-color: #fffafa;
+  color: #3e3e3e;
+  border: 2px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wide-button2:hover {
+  background-color: #f0f0f0;
+}
+
+.verification-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.verification-message {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+}
+
+.verification-message p {
+  margin: 10px 0;
+}
+
+.verification-message h2 {
+  margin-bottom: 10px;
+}
+
+.verification-message .wide-button {
+  margin-top: 20px;
+  width: 60%;
+  
+}
+
+.verified{
+  color: #111112;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.para2{
+  color: #909090;
+ 
+}

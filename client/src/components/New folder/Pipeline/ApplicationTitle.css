@@ -1,0 +1,80 @@
+.modal-container-applicationtitle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above the sidebar and navbar */
+
+  }
+  
+  .modal-content-applicationtitle {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1010; /* Higher than modal container */
+    animation: fadeInApplicationTitleModal 0.5s ease-out; /* Added keyframe animation */
+  }
+  .modal-title-text-applicationtitle {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .input-applicationtitle {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .button-group-applicationtitle {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    }
+  
+  .submit-button-applicationtitle,
+  .cancel-button-applicationtitle {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button-applicationtitle {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cancel-button-applicationtitle {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  .submit-button-applicationtitle:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button-applicationtitle:hover {
+    background-color: #e6f7ff;
+  }
+  
+  /* Keyframe animation for modal fade-in effect */
+@keyframes fadeInApplicationTitleModal {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

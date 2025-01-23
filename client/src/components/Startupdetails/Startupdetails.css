@@ -1,0 +1,202 @@
+/* Startupdetails.css */
+.Startupdetails-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.Startupdetails-container {
+  width: 30%;
+  max-width: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+  margin-top: 160px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  color: #909090;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group .react-tel-input .form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group .react-tel-input .flag-dropdown {
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.form-group .react-tel-input .form-control:focus,
+.form-group .react-tel-input .flag-dropdown:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group .react-tel-input .form-control {
+  padding-left: 50px; /* Add padding to accommodate the flag */
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.toggle-password-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9d9c9c;
+  font-size: 14px;
+}
+
+.toggle-password-visibility:focus {
+  outline: none;
+}
+
+.toggle-password-visibility:hover {
+  color: #9d9c9c;
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.half-width {
+  width: calc(50% - 5px);
+}
+
+.drishti {
+  color: #007BFF;
+}
+
+button[type="submit"],
+.submit-btn {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button[type="submit"]:hover,
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    background-color: #f0f2f5;
+}
+/* Password toggle icon styles */
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: calc(100% - 30px);
+  padding-right: 30px;
+}
+
+.password-input svg {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.password-input-container .toggle-password-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.cancel-btn {
+  width: 43%;
+  padding: 10px;
+  background-color: #adadad; /* Red color for cancel button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.cancel-btn:hover {
+  background-color: #a8a3a3; /* Darker red color on hover */
+}

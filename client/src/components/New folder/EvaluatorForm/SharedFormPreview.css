@@ -1,0 +1,179 @@
+.custom-backgroundformsharedformpreview {
+  background: linear-gradient(135deg, #8ac3ff, #dbedff);
+  padding: 20px;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-shared-form-preview-containerformsharedformpreview {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.custom-form-titleformsharedformpreview {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.custom-formformsharedformpreview {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-form-rowformsharedformpreview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-form-groupformsharedformpreview {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-form-labelformsharedformpreview {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.custom-requiredformsharedformpreview {
+  color: red;
+  margin-left: 4px;
+}
+
+.custom-form-inputformsharedformpreview {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-form-inputformsharedformpreview:focus {
+  border-color: #1e88e5;
+  outline: none;
+}
+
+.custom-rating-scaleformsharedformpreview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-rating-itemformsharedformpreview {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 14px;
+  width: 38px;
+  height: 30px;
+}
+
+.custom-rating-itemformsharedformpreview input[type="radio"] {
+  display: none;
+}
+
+.custom-rating-labelformsharedformpreview {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-rating-itemformsharedformpreview input[type="radio"]:checked + .custom-rating-labelformsharedformpreview {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+.custom-form-submit-buttonformsharedformpreview,
+.custom-form-cancel-buttonformsharedformpreview {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  width: 150px; /* Same width for both buttons */
+}
+
+.custom-form-submit-buttonformsharedformpreview {
+  background-color: #007bff;
+  color: white;
+}
+
+.custom-form-submit-buttonformsharedformpreview:hover {
+  background-color: #0056b3;
+}
+
+.custom-form-cancel-buttonformsharedformpreview {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.custom-form-cancel-buttonformsharedformpreview:hover {
+  background-color: #e6f7ff;
+}
+
+.form-buttonssharedformpreview {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.custom-form-inputformsharedformpreview.errorformsharedformpreview {
+  border-color: red;
+}
+
+.error-messageformsharedformpreview {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.error-iconformsharedformpreview {
+  margin-right: 5px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px;
+  width: 15px;
+  height: 15px;
+}
+
+.character-limit-sharedformpreview {
+  text-align: right;
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+ 

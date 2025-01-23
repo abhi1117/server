@@ -1,0 +1,86 @@
+.modal-attachform {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content-attachform {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+        /** START CHANGE FOR Keyframe Animations --- **/
+        animation: fadeInCustomattachform 0.5s ease-out;
+        /** END CHANGE FOR Keyframe Animations --- **/
+  }
+  
+  .modal-attachform-heading-text-attachform {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .modal-content-attachform h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content-attachform select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .modal-buttons-applicationattachform {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+  }
+  .modal-content-attachform button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .modal-attach-button-applicationattachform {
+    background-color: #007bff;
+    color: white; 
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  } 
+  
+  .modal-attach-button-applicationattachform :hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-cancel-button-applicationattachform {   
+    background-color: #ffffff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  } 
+  
+  .modal-cancel-button-applicationattachform:hover {
+   background-color: #e6f7ff;
+  }
+
+  /** START CHANGE FOR Keyframe Animations --- **/
+@keyframes fadeInCustomattachform {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

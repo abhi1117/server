@@ -1,0 +1,510 @@
+.form-builder-container-formbuilder {
+  display: flex;
+  height: 100vh; 
+}
+
+.form-builder-sidebar-formbuilder {
+  width: 320px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd; 
+  overflow-y: auto; 
+  max-height: 100vh;
+}
+
+.form-builder-sidebar-formbuilder h3 { 
+  margin-bottom: 20px;
+}
+
+.draggable-item-formbuilder { 
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: grab;
+  border-radius: 4px;
+  text-align: center; 
+}
+
+.draggable-item-formbuilder:hover {
+  background-color: #F5FAFF;
+  color: #0183ff;
+}
+
+.form-builder-content-formbuilder {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.form-builder-header-formbuilder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-builder-buttons-formbuilder {
+  display: flex;
+  align-items: center;
+}
+
+.form-builder-buttons-formbuilder button {
+  margin-left: 10px;
+}
+
+.form-builder-save-button-formbuilder {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-builder-save-button-formbuilder:hover {
+  background-color: #0056b3;
+}
+
+.form-builder-preview-button-formbuilder {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;  
+}
+
+.form-builder-preview-button-formbuilder:hover {
+  background-color: #e6f7ff;
+}
+
+.form-builder-close-button-formbuilder {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-builder-close-button-formbuilder:hover {
+  background-color: #e6f7ff;
+}
+
+.drop-area-formbuilder {
+  border: 2px dashed #020eb8;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 300px;
+  background-color: #e8fffc;
+  overflow-y: auto; 
+  max-height: calc(100vh - 150px);
+}
+
+.dropped-element-formbuilder {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.element-header-formbuilder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.element-number-formbuilder {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.element-label-formbuilder {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.element-actions-formbuilder {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon-formbuilder { 
+  width: 30px;
+  height: 30px;
+  display: flex;
+  font-size: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  margin-right: 25px;
+} 
+
+.icon-formbuilder:hover {
+  background-color: #007bff;  
+  color: #fff;
+}
+
+.icon-formbuilder.delete-formbuilder {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.icon-formbuilder.delete-formbuilder:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.icon-formbuilder:not(.delete-formbuilder):hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.element-details-formbuilder {
+  margin-top: 10px;
+}
+
+.form-group-formbuilder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.form-group-formbuilder label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group-formbuilder .label-text-formbuilder {
+  display: flex;
+  align-items: center;
+}
+
+.form-group-formbuilder .label-text-formbuilder span {
+  margin-right: 5px;
+}
+
+.form-group-formbuilder input[type="text"],
+.form-group-formbuilder input[type="email"],
+.form-group-formbuilder select,
+.form-group-formbuilder textarea,
+.form-group-formbuilder input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Add styles for selected values */
+.selected-value-formbuilder {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e0f7fa;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight:600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.selected-value-formbuilder:hover {
+  transform: scale(1.05); 
+}
+
+/* Add styles for the remove icon inside selected values */
+.remove-selected-value-icon-formbuilder {
+  margin-left: 8px;
+  cursor: pointer;
+  /* color: #dc3545; */
+  color: #ff6b6b;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.remove-selected-value-icon-formbuilder:hover {
+  /* color: #ff0000; */
+  color: #ff3b3b;
+}
+
+
+.option-group-formbuilder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option-group-formbuilder input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.option-group-formbuilder button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.option-group-formbuilder button:hover {
+  color: #c82333;
+}
+
+.form-group-formbuilder input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* .checkbox-label-formbuilder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+} */
+ /* START CHANGE FOR blue tick in checkbox of "Question Below" --- */
+.checkbox-label-formbuilder input[type="checkbox"] {
+  accent-color: #007bff; /* This will make the checkmark blue */
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+/* END CHANGE FOR blue tick in checkbox of "Question Below" --- */
+
+.required-formbuilder {
+  color: red;
+  font-size: 0.8em;
+}
+
+.required-formbuilder-note {
+  color: red;
+  font-size: 1.1em;
+}
+
+.add-option-formbuilder {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-option-formbuilder:hover {
+  background-color: #0056b3;
+}
+
+.custom-ui-formbuilder {
+  padding: 30px;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+}
+
+.custom-ui-formbuilder h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-ui-formbuilder p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button-group-formbuilder {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delete-button-formbuilder { 
+  background-color: #ff7878;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+.delete-button-formbuilder:hover { 
+  background-color: #ff0000;
+}
+
+.cancel-button-normal-formbuilder { 
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button-normal-formbuilder:hover { 
+  background-color: #e6f7ff;
+}
+
+.custom-overlay-formbuilder {
+  background: rgba(90, 90, 90, 0.5);
+}
+
+.drag-handle-formbuilder {
+  cursor: grab;
+  margin-right: 10px;
+  color: blue;
+  size: 100px;
+}
+
+.drag-handle-formbuilder:hover {
+  color: rgb(255, 174, 0);
+}
+
+
+
+
+
+/* Add this CSS to style the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*** START CHANGE FOR actual and customized labels--- ***/
+.element-label-container-formbuilder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  position: relative;
+  padding-left: 10px;
+  border-left: 3px solid #007bff; /* Vertical border to add a sleek line effect */
+}
+
+/* Customize Label Style */
+.element-custom-label-formbuilder {
+  font-weight: bold;
+  font-size: 16px; /* Slightly larger font for emphasis */
+  background: linear-gradient(90deg, #007bff, #00c6ff); /* Trendy gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Gradient text */
+  margin-bottom: 5px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  /* text-transform: uppercase;   */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  font-family: 'Poppins', sans-serif; /* Use a trendy font like Poppins */
+}
+
+/* Add hover effect to make the label pop */
+.element-custom-label-formbuilder:hover {
+   text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3); 
+}
+
+/* Actual Label Style */
+.element-actual-label-formbuilder {
+  font-size: 13px;
+  color: #666; /* Modern muted gray color */
+  font-style: italic;
+  position: relative;
+  padding-left: 5px;
+}
+
+.element-actual-label-formbuilder:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #007bff; /* Accent dot before the actual label */
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Add transition effects */
+.element-label-container-formbuilder:hover .element-actual-label-formbuilder {
+  color: #007bff; /* Highlight the actual label on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+/*** END CHANGE FOR actual and customized labels--- ***/
+ 
+
+
+
+
+
+ 

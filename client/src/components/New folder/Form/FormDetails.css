@@ -1,0 +1,132 @@
+.form-details-container-formdetails {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 100%; /* Full width */
+  margin: 0 auto;
+} 
+
+.header-container-formdetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-container-formdetails h2 {
+  margin: 0;
+}
+
+.form-details-buttons-formdetails {
+  display: flex;
+  gap: 10px;
+}
+
+.save-button-formdetails,
+.edit-button-formdetails,
+.close-button-formdetails {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.save-button-formdetails {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.save-button-formdetails:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.edit-button-formdetails {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.edit-button-formdetails:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.close-button-formdetails {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.close-button-formdetails:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.form-content-container-formdetails {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-details-form-formdetails .form-group-formdetails {
+  margin-bottom: 20px;
+  position: relative; /* Added for positioning the character count */
+}
+
+.form-details-form-formdetails label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: 500; /* Reduce font weight for labels */
+}
+
+.form-details-form-formdetails .number-box-formdetails {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+  font-weight: 400; /* Reduce font weight for numbers */
+}
+
+.form-details-form-formdetails input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-details-form-formdetails small {
+  position: absolute; /* Absolute positioning for character count */
+  right: 10px; /* Align to the right */
+  bottom: -20px; /* Adjust position to avoid overlap */
+  color: #666;
+}
+
+.form-buttons-formdetails {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form-buttons-formdetails .submit-button-formdetails {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-buttons-formdetails .submit-button-formdetails:hover {
+  background-color: #0056b3;
+}
+
+
+
+ 

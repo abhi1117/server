@@ -1,0 +1,156 @@
+.dashboard-formdisplayevaluatorform {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-displayevaluatorform {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container-displayevaluatorform {
+  margin-bottom: 20px; 
+} 
+ 
+.logo-displayevaluatorform {
+  margin-bottom: 20px;
+}
+
+.logo-displayevaluatorform img {
+  width: 100%;
+}
+
+.nav-container-displayevaluatorform {
+  flex-grow: 1;
+}
+
+.nav-displayevaluatorform ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-displayevaluatorform ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.main-content-displayevaluatorform {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.header-displayevaluatorform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.founder-displayevaluatorform {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.search-bar-displayevaluatorform {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.profile-section-displayevaluatorform {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon-displayevaluatorform {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #EAEAEA;
+  padding: 1px;
+  margin-right: 20px;
+}
+
+.user-info-displayevaluatorform {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials-displayevaluatorform {
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #EAEAEA;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details-displayevaluatorform {
+  text-align: left;
+}
+
+.user-name-displayevaluatorform {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email-displayevaluatorform {
+  color: #666;
+  font-size: 12px;
+}
+
+.content-displayevaluatorform {
+  padding: 20px;
+}
+
+.content-header-displayevaluatorform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-header-displayevaluatorform h2 {
+  font-size: 24px;
+}
+
+.form-list-displayevaluatorform {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-table-displayevaluatorform {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table-displayevaluatorform th, .form-table-displayevaluatorform td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+ 

@@ -1,0 +1,136 @@
+.signin-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  position: relative;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 90px;
+  width: 80px;
+}
+
+.forgetpass-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  width: 20%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  width: 40%;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.mail-sent-popup {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 20%;
+}
+
+.mail-sent-popup i {
+  font-size: 2rem; /* Adjust the size of the icon */
+  color: #0183ff; /* Adjust the color of the icon */
+  margin-bottom: 10px;
+}
+
+.mail-sent-popup h2 {
+  margin-bottom: 10px;
+}
+
+.mail-sent-popup p {
+  margin-bottom: 20px;
+}
+
+.mail-sent-popup .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail-sent-popup .submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.mail-sent-popup .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+   width: 40%;
+}
+
+.mailsent{
+    text-align: center;
+    font-weight: 700;
+}

@@ -1,0 +1,289 @@
+/* General Reset and Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Dashboard Layout */
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-left: 70px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6d6d6d;
+}
+
+.nav ul li.active {
+  margin-top: 60px;
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* Main Content */
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.founder {
+    font-size: 24px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-email {
+  color: #666;
+  font-size: 12px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Metrics Styles */
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.metric {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.metric-icon {
+  font-size: 24px;
+  color: #6d6d6d;
+}
+
+.metric-number {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.metric-label {
+  font-size: 16px;
+  color: #6d6d6d;
+}
+
+/* Founders List Table */
+
+.founders-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.founders-list th,
+.founders-list td {
+  padding: 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #111112;
+}
+
+.sorticon {
+  margin-left: 5px;
+}
+
+/* Dropdown Menu Styles */
+
+.action-container {
+  position: relative;
+  display: inline-block;
+}
+
+.action-icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position:absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 0;
+  width: 190px;
+}
+
+.dropdown-menu[style*="top"] {
+  bottom: calc(90% + 10px);
+  right: 0;
+}
+
+.dropdown-menu[style*="bottom"] {
+  top: calc(90% + 10px);
+  right: 0;
+}
+
+.dropdown-menu button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  width: 90%;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #dcdcdc;
+}
+
+/* Pagination and Export Table */
+
+.exporttablepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.export-table {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.export-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page label {
+  margin-right: 10px;
+}
+
+.rows-per-page select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.rows-per-page select:focus {
+  outline: none;
+  border-color: #007bff;
+}

@@ -1,0 +1,193 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  .nav-container {
+    flex-grow: 1;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #6d6d6d;
+  }
+  
+  .nav ul li {
+    font-weight: 600;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-icon {
+    height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #EAEAEA;
+  padding: 5px;
+  margin-right: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-initials {
+    color: #fff;
+  padding: 0px;
+    border: 1px solid #EAEAEA;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .user-details {
+    text-align: left;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .user-email {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content-headerlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .startup-detail {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 81px;
+    height: 65px;
+  }
+  
+  .company-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .info-item {
+    flex: 1;
+  }
+  
+  .info-item p {
+    margin: 5px 0;
+  }
+  .info-item-first {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .info-item-first p {
+    margin: 5px 0;
+  }
+  .label {
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+  }
+  
+  .value {
+    margin-left: 10px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }

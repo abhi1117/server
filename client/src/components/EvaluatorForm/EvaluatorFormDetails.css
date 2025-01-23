@@ -1,0 +1,177 @@
+.form-details-containerevaluatorformdetails {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 0 auto;
+} 
+
+.header-containerevaluatorformdetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-containerevaluatorformdetails h2 {
+  margin: 0;
+}
+
+.form-details-buttonsevaluatorformdetails {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-buttonevaluatorformdetails,
+.close-buttonevaluatorformdetails,
+.submit-buttonevaluatorformdetails {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.edit-buttonevaluatorformdetails {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.edit-buttonevaluatorformdetails:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.close-buttonevaluatorformdetails {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.close-buttonevaluatorformdetails:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.submit-buttonevaluatorformdetails {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-buttonevaluatorformdetails:hover {
+  background-color: #0056b3;
+}
+
+.form-content-containerevaluatorformdetails {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-details-formevaluatorformdetails .form-groupevaluatorformdetails {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-details-formevaluatorformdetails label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-details-formevaluatorformdetails .number-boxevaluatorformdetails {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+  font-weight: 400;
+}
+
+.form-details-formevaluatorformdetails input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-buttonsevaluatorformdetails {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.rating-containerevaluatorformdetails {
+  display: flex;
+  gap: 10px;
+}
+
+.rating-buttonevaluatorformdetails {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.rating-buttonevaluatorformdetails-1 {
+  background-color: #d11141;
+}
+
+.rating-buttonevaluatorformdetails-2 {
+  background-color: #e94b3c;
+}
+
+.rating-buttonevaluatorformdetails-3 {
+  background-color: #f37736;
+}
+
+.rating-buttonevaluatorformdetails-4 {
+  background-color: #fdbb30;
+}
+
+.rating-buttonevaluatorformdetails-5 {
+  background-color: #ffee33;
+}
+
+.rating-buttonevaluatorformdetails-6 {
+  background-color: #d0e17d;
+}
+
+.rating-buttonevaluatorformdetails-7 {
+  background-color: #a0c238;
+}
+
+.rating-buttonevaluatorformdetails-8 {
+  background-color: #69b34c;
+}
+
+.rating-buttonevaluatorformdetails-9 {
+  background-color: #57a639;
+}
+
+.rating-buttonevaluatorformdetails-10 {
+  background-color: #6b9932;
+}
+
+.rating-buttonevaluatorformdetails:hover,
+.rating-buttonevaluatorformdetails.hover {
+  opacity: 0.7;
+}
+
+.rating-buttonevaluatorformdetails.selectedevaluatorformdetails {
+  border: 2px solid black; /* Add a border or some other styling to highlight the selected rating */
+}
+
+
+
+ 

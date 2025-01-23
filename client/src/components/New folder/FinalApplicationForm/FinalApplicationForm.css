@@ -1,0 +1,142 @@
+.application-form-containerfinalapplication {
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.application-titlefinalapplication {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.application-posterfinalapplication {
+  /** START CHANGE FOR "responsive poster image" --- **/
+  width: 100%; /* Make the image take the full width of its container */
+  max-width: 935px; /* Limit the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+  /** END CHANGE FOR "responsive poster image" --- **/
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+.application-posterfinalapplication:hover {
+  /* transform: scale(1.05);  */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.application-descriptionfinalapplication {
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.supporting-documentsfinalapplication {
+  margin: 20px 0;
+}
+
+.supporting-documentsfinalapplication h3 {
+  font-size: 20px;
+}
+
+.supporting-documentsfinalapplication ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.supporting-documentsfinalapplication ul li {
+  margin: 10px 0;
+}
+
+.supporting-documentsfinalapplication ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.document-number-documentsfinalapplication {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.application-formfinalapplication {
+  margin: 20px 0;
+}
+
+.form-groupfinalapplication {
+  margin-bottom: 15px;
+}
+
+.form-groupfinalapplication label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-groupfinalapplication input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+buttonfinalapplication {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+buttonfinalapplication[type="button"] {
+  background-color: gray;
+}
+
+.full-page-message-finalapplicationForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../../public/background1.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;   */
+  background: linear-gradient(135deg, #c1defd, #dbedff);
+  text-align: center;
+}
+
+.expired-message-container-finalapplicationForm {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* White with slight transparency */
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 700px;
+}
+
+.expired-message-title-finalapplicationForm {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.expired-message-text-finalapplicationForm {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+ 

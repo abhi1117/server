@@ -1,0 +1,212 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-container {
+  margin-top: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #909090;
+}
+
+.nav li .nav-icon {
+  margin-right: 10px;
+}
+
+.nav li.active {
+  color: #909090;
+  font-weight: bold;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .search-bar {
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header .profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.header .profile-section .notification-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.header .profile-section .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .profile-section .user-info .user-initials {
+  margin-right: 10px;
+}
+
+.header .profile-section .user-info .user-details {
+  text-align: right;
+}
+
+.header .profile-section .user-info .user-name {
+  display: flex;
+  align-items: center;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-founder-button {
+  background-color: #1c88f8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.founders-list {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.founders-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.founders-list th,
+.founders-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.founders-list th {
+  background: #f9f9f9;
+}
+
+.founders-list tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.founders-list th input,
+.founders-list td input {
+  margin: 0;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f9f9f9;
+}
+
+.export-button {
+  background: none;
+  color:#111112;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.export-button .icon {
+  margin-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-button {
+  background: #fff;
+  color: #1c88f8;
+  padding: 5px 10px;
+  border: 1px solid #1c88f8;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.pagination-button.disabled {
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  margin: 0 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.rows-per-page select {
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

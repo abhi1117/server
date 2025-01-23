@@ -1,0 +1,108 @@
+@keyframes fadeInCustomAddNewFormModalUnique { /* Updated class selector */
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.modal-overlayevaluatordashboardaddnewformmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contentevaluatordashboardaddnewformmodal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%;
+  animation: fadeInCustomAddNewFormModalUnique 0.5s ease-out; /* Apply fade-in animation */
+  height: 215px;
+}
+
+.modal-headerevaluatordashboardaddnewformmodal { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-buttonevaluatordashboardaddnewformmodal {
+  background: none;
+  border: none; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
+
+.close-buttonevaluatordashboardaddnewformmodal:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.modal-formevaluatordashboardaddnewformmodal .form-groupevaluatordashboardaddnewformmodal {
+  margin-bottom: 15px;
+}
+
+.modal-formevaluatordashboardaddnewformmodal .form-groupevaluatordashboardaddnewformmodal label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modal-formevaluatordashboardaddnewformmodal .form-groupevaluatordashboardaddnewformmodal input,
+.modal-formevaluatordashboardaddnewformmodal .form-groupevaluatordashboardaddnewformmodal select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-footerevaluatordashboardaddnewformmodal {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.submit-buttonevaluatordashboardaddnewformmodal {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-buttonevaluatordashboardaddnewformmodal:hover {
+  background-color: #0056b3;
+  
+}
+
+.cancel-buttonevaluatordashboardaddnewformmodal {
+  background-color: #ffffff;
+  color: #007bff;
+  border: none;
+  padding: 10px 69px;
+  border: 1px solid #007bff; 
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-buttonevaluatordashboardaddnewformmodal:hover {  
+  background-color: #e6f7ff;
+}
+

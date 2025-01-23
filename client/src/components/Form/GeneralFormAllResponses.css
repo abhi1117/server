@@ -1,0 +1,445 @@
+.custom-background-generalformallresponses {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding: 20px;
+} 
+ 
+.custom-container-generalformallresponses {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-response-header-generalformallresponses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-button-close-modal-generalformallresponses {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.custom-button-close-modal-generalformallresponses:hover {
+  background-color: #0056b3;
+}
+.custom-button-export-delete-backtoresponses-generalformallresponses {
+  color: white;
+  background-color: #0183ff;
+  border: 1px solid #0183ff;
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-export-delete-backtoresponses-generalformallresponses:hover {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #0183ff; 
+  border-radius: 5px;
+  padding: 5px 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-response-details-generalformallresponses {
+  margin-bottom: 20px;
+}
+
+.custom-response-item-generalformallresponses {
+  margin-bottom: 10px;
+}
+.file-response-generalformallresponses {
+  cursor: pointer;
+  color: #007bff;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.file-response-generalformallresponses:hover {
+  color: rgb(0, 0, 0);
+  /* background-color: #0183ff; */
+}
+
+.header-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.custom-response-list-generalformallresponses {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-response-list-generalformallresponses li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-button-view-details-generalformallresponses {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button-view-details-generalformallresponses:hover {
+  color: #020202;
+  background-color: #e9f3ff;
+font-size: 13px;
+}
+.documents-generalformallresponses {
+  color: #020202;
+font-size: 23px;
+font-weight: 500;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.no-responses-found-generalformallresponses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.no-responses-found-generalformallresponses p {
+  margin: 0;
+}
+
+/* START: Delete Modal Styles */
+/* START: Keyframes for Modals */
+@keyframes fadeInCustomGeneralFormModal {
+from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
+}
+/* END: Keyframes for Modals */
+.modal-background-generalformallresponses { 
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(90, 90, 90, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+/* animation: fadeInCustomGeneralFormModal 0.5s ease-out;  */
+}
+
+.modal-container-generalformallresponses {
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+width: 400px;
+text-align: center;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+animation: fadeInCustomGeneralFormModal 0.5s ease-out; 
+}
+
+.modal-buttons-generalformallresponses {
+display: flex;
+margin-top: 20px;
+gap: 20px;
+margin-left: 80px;
+}
+
+.modal-button-generalformallresponses { 
+background-color: #ff7878;
+color: #fff;
+border: none;
+padding: 8px 16px;
+border-radius: 4px; 
+cursor: pointer;
+}
+
+.modal-button-generalformallresponses:hover { 
+background-color: #ff0000;
+}
+.modal-button-cancel-generalformallresponses {
+background-color: #ffffff;
+color: #007bff;
+border: 1px solid #007bff;
+padding: 8px 16px;  
+border-radius: 4px;   
+cursor: pointer;
+}
+
+.modal-button-cancel-generalformallresponses:hover {
+background-color: #e6f7ff;
+}
+/* END: Delete Modal Styles */ 
+/* START: Style for links in the form */
+.link-response-generalformallresponses {
+text-decoration: none; 
+color: blue; 
+transition: color 0.3s; 
+}
+
+.link-response-generalformallresponses:hover {
+color: black; 
+}
+/* END: Style for links in the form */
+.pagination-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: -10px;
+border: none;
+}
+
+.pagination {
+display: flex;
+align-items: center;
+}
+
+.pagination-arrow-generalformallresponses {
+cursor: pointer;
+margin: 0 10px;
+background-color:transparent;
+color: #020202;
+}
+
+.pagination-arrow-generalformallresponses.disabled {
+cursor: not-allowed;
+opacity: 0.5;
+background-color:transparent;
+color: #020202;
+
+}
+
+.page-number {
+font-weight: bold;
+}
+
+.rows-per-page {
+display: flex;
+align-items: center;
+}
+
+.rows-per-page label {
+margin-right: 10px;
+}
+
+.rows-per-page select {
+padding: 5px;
+border-radius: 4px;
+border: 1px solid #ccc;
+}
+
+.rows-info-generalformallresponses {
+font-size: 14px;
+}
+
+/* START: Update CSS for list items */
+.custom-response-list-generalformallresponses li {
+display: flex;
+justify-content: space-between;
+align-items: center; /* Center align items for consistent spacing */
+margin-bottom: 10px;
+padding: 0 5px; /* Adjust padding for tighter spacing */
+}
+
+.custom-response-list-generalformallresponses input[type="checkbox"] {
+margin-right: 10px; /* Add small margin for checkboxes */
+flex-shrink: 0; /* Prevent shrinking of checkboxes */
+}
+
+/* Start of the new table styling */
+.custom-container-generalformallresponses {
+  max-width: 1000px; /* Adjust the width as needed */
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General styling for the table */
+.custom-response-list-generalformallresponses {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Header styling */
+.custom-response-list-generalformallresponses li {
+  background-color: #f5faff;
+  color: #0183ff;
+}
+
+/* Row styling */
+.custom-response-list-generalformallresponses li {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: left;
+  background-color: #fff;
+  color: #333;
+}
+
+.custom-response-list-generalformallresponses li:hover {
+  background-color: #f0f4ff;
+}
+
+/* Checkbox styling */
+.custom-response-list-generalformallresponses input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.custom-button-view-details-generalformallresponses {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button-view-details-generalformallresponses:hover {
+  color: #020202;
+  background-color: #e9f3ff;
+  font-size: 13px;
+}
+
+/* Pagination styling */
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-arrow-generalformallresponses {
+  cursor: pointer;
+  margin: 0 10px;
+  background-color: transparent;
+  color: #0183ff;
+}
+
+.pagination-arrow-generalformallresponses.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: transparent;
+  color: #ccc;
+}
+
+/* Information about rows */
+.rows-info-generalformallresponses {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Rows per page selector */
+.rows-per-page select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* End of the new table styling */
+
+@media print {
+.custom-button-close-modal-generalformallresponses,
+.custom-button-export-delete-backtoresponses-generalformallresponses {
+  display: none; /* Hide buttons during printing */
+}
+}
+
+.print-response-generalformallresponses{
+ background-color: transparent;
+ color: #6e6e6e;
+}
+.print-response-icon-generalformallresponses{
+color: #6e6e6e;
+width: 13px;
+height: 13px;
+}
+
+/* ///for hide heading // */
+@media print {
+/* Hide specific elements in print */
+.custom-print-title,
+.react-app-title {
+  display: none !important;
+}
+/* Hide the entire header if it contains "Print All Responses" or "React App" */
+.header-to-hide {
+  display: none !important;
+}
+}
+ 
+/* Highlight Start: Modal Styling */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal ul li {
+  margin: 10px 0;
+}
+
+.modal button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #357ae8;
+}
+/* Highlight End: Modal Styling */

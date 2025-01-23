@@ -1,0 +1,124 @@
+.modal-container-addnewcohortsmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: center;
+  overflow-y: auto; 
+  padding-top: 20px;
+  z-index: 101;
+}
+
+/*** START CHANGE for closeModal --- ***/
+.modal-header-addnewcohortsmodal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group-addnewcohortsmodal {
+  display: flex;
+  justify-content:center;
+gap: 10px;
+margin-top: 20px;
+}
+
+.close-button-addnewcohortsmodal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
+
+.close-button-addnewcohortsmodal:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/*** END CHANGE FOR closeModal --- ***/
+
+.modal-content-addnewcohortsmodal {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 600px;
+  margin: auto;
+  animation: fadeInCustomCohortsModal 0.5s ease-out; 
+}
+
+.modal-content-addnewcohortsmodal h2 {
+  margin-top: 0;
+}
+
+.modal-content-addnewcohortsmodal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content-addnewcohortsmodal label {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.modal-content-addnewcohortsmodal input,
+.modal-content-addnewcohortsmodal textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button-addnewcohortsmodal {
+  background-color: #0183ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 38%; 
+}
+
+.cancel-button-addnewcohortsmodal {
+  background-color: #0183ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 38%; 
+}
+
+.cancel-button-addnewcohortsmodal {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+
+.submit-button-addnewcohortsmodal:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button-addnewcohortsmodal:hover { 
+  background-color: #e6f7ff;
+}
+.add-poster-button-addnewcohortsmodal {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.add-poster-button-addnewcohortsmodal:hover { 
+  background-color: #e6f7ff;
+}
+
+ 

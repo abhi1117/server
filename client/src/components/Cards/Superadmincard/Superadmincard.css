@@ -1,0 +1,139 @@
+/* Working 8 aug */
+.card-dashboard {
+  display: flex;
+}
+
+.card-sidebar {
+  width: 300px;  /* Increased width */
+  background-color: #fff;
+  height: 0vh;
+  padding-left: 20px;
+}
+
+.card-logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-logo img {
+  margin-top: 15px;
+  max-width:42%;
+}
+
+.card-nav-container {
+  padding-top: 0px;
+}
+
+.card-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.card-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #6d6d6d;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+
+.card-nav-item:hover {
+  background-color: #ddd;
+}
+
+.card-nav-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.card-main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.card-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-user-initials img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-user-details {
+  margin-right: 10px;
+}
+
+.card-logout-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 0px;
+}
+
+.card-card {
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  height: 100px;
+}
+
+.card-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-card-number {
+  padding: 35px;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  border-radius: 8px 0 0 8px;
+  height: 110px;
+}
+
+.card-card-label {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}

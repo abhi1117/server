@@ -1,0 +1,85 @@
+.modal-container-applicationposter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above the sidebar and navbar */
+}
+
+.modal-content-applicationposter {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+    z-index: 1010; /* Higher than modal container */
+    animation: fadeInCustomPosterModal 0.5s ease-out; /* Added keyframe animation */
+}
+
+.modal-poster-heading-text-applicationposter {
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.input-applicationposter {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Centering the buttons */
+.button-group-applicationposter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-button-applicationposter,
+.cancel-button-applicationposter {
+    padding: 10px 20px;
+    margin: 0 10px; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button-applicationposter {
+  background-color: #007bff;
+  color: white; 
+}
+
+.cancel-button-applicationposter {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;}
+.cancel-button-applicationposter:hover {
+    background-color: #ccc;
+    color: #007bff;
+}
+
+/* Hover effects */
+.submit-button-applicationposter:hover{
+  background-color: #0056b3;
+    opacity: 1.8;
+}
+ 
+.cancel-button-applicationposter:hover {
+  background-color: #e6f7ff;
+    opacity: 0.8;
+}
+
+@keyframes fadeInCustomPosterModal {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+ 
